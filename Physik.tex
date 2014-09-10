@@ -243,6 +243,104 @@ Es gilt also neben dem Impulssatz auch der Energiesatz der Mechanik
 \pagebreak
 
 \section{Elektrizitätslehre}
+\subsection{Elektrostatik}
+Alle Ladungen sind Vielfache der \textit{Elementarladung}, die Einheit ist Coulomb: 1 C = 1 As. Die Kraft zwischen zwei Ladungen ist definiert als
+\begin{equation}
+\vec{F} = \frac{1}{4 \pi \epsilon_0}\frac{Q_1 \cdot Q_2}{r^2} \vec{r}_e, \quad \epsilon_0 = 8.854\cdot 10^{-12}\frac{As}{Vm}
+\end{equation}
+$\epsilon_0$ wird dabei als \textbf{Dielektrizitätskonstante} bezeichnet. \\
+Die Kraft auf eine Einheitsladung wird bezeichnet als \textbf{elektrische Feldstärke}
+\begin{equation}
+\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{Q}{r^2}\vec{r}_e \left[\frac{V}{m}\right]
+\end{equation}
+\begin{center}
+\textit{
+Eine Punktladung Q erzeugt den Fluss $\Phi_{el} = \int_A{\vec{E}\cdot d\vec{A}} =  \frac{Q}{\epsilon_0}$ durch eine die Ladung umgebende Kugeloberfläche. Ist in einer geschlossenen Fläche keine Ladung enthalten, so ist auch der Fluss Null. } 
+\end{center}
+Die im Raum verteilten Ladungen sind Quellen und Senken des elektrischen Feldes. Da es sich beim Kraftfeld um ein konservatives Kraftfeld handelt, kann man eine Funktion aufstellen, die man als \textbf{elektrostatisches Potential} bezeichnet. 
+\begin{equation}
+V(P) = \int_{P_1}^{\infty}{\vec{E}\cdot d\vec{s}}
+\end{equation}
+Die Potentialdifferenz zwischen zwei Punkten im elektrischen Feld nennt man die Spannung U
+\begin{equation}
+U = V(P_1) - V(P_2) = \int_{P_1}^{P_2}{\vec{E}\cdot d\vec{s}}, \quad U = \text{V(Volt)}
+\end{equation}
+Die Feldstärke lässt sich auch durch \textbf{Gradientenbildung} aus dem Potential berechnen
+\begin{equation}
+\vec{E} = -grad \ V
+\end{equation}
+
+\subsubsection{Kräfte auf einen Dipol}
+In einem \textbf{homogenen Feld}, in dem sich ein Dipol mit zwei unterschiedlichen Ladungen befindet, sind die Kräfte der beiden Enden entgegengesetzt gerichtet $\Rightarrow$ Drehmoment, dass das Dipol parallel nach dem Feld ausrichtet. 
+
+\subsubsection{Leiter im elektrischen Feld}
+Zwei entgegengesetzte Leiterplatten werden als \textbf{Kondensator} bezeichnet, es gilt dabei 
+\begin{equation}
+Q = C \cdot U, \quad C = \epsilon_0\frac{A}{d} \ [F]\text{(Farad)}
+\end{equation}
+Für die Energie im elektrischen Feld erhält man die Gleichung
+\begin{equation}
+W = \int{V \cdot dQ} = \frac{1}{2}C \cdot U^2
+\end{equation}
+
+\pagebreak
+
+\subsubsection{Millikan Versuch zur Ladungsbestimmung}
+Es wurden dabei Öltröpfchen zwischen zwei horizontal angebrachte Kondensatorplatten gebracht, einige Tröpfchen wurden durch Reibung elektrisch geladen und trugen dadurch die gequantelte Ladung $q = n \cdot e$. Im feldfreien Kondensator sinken die Tröpfchen, erst durch Anlegen einer Spannung können diese in der Schwebe gehalten werden und geben dadurch Aufschluss auf deren Ladung, da sich Schwerkraft und elektrische Kraft aufheben müssen. 
+Nach Messung der Größe der Tröpfchen lässt sich die \textbf{Elementarladung e} berechnen ($e = 1.602\cdot 10^-19 C$).
+
+\subsubsection{Ablenkung von $e^-$ in elektrischen Feldern}
+Ein Teilchen mit Ladung \textit{q} fliegt mit der Geschwindigkeit $v$ durch zwei horizontale Kondensatorplatten mit der Länge L und wird dabei abgelenkt. 
+\begin{equation}
+\Delta z = \frac{a \cdot t^2}{2} = \frac{q \cdot E}{m}\frac{L^2}{2v^2} = \frac{E\cdot L^2}{2v^2} \cdot \frac{q}{m}
+\end{equation}
+Moleküle besitzen elektrische Dipolmomente aufgrund der Verschiebung von Ladungsschwerpunkten. Sie richten sich daher in einem elektrischen Feld aus. Atome selbst besitzen kein Dipolmoment, es wird aber eines im elektrischen Feld induziert. \\
+Im elektrischen Feld gibt es keine geschlossenen Feldlinien, es gilt also
+\begin{equation}
+\oint{\vec{E}\cdot d\vec{s}} \Rightarrow rot \ \vec{E} = 0
+\end{equation}
+\begin{center}
+\textit{Das \textbf{elektrische Feld} ist \textbf{wirbelfrei} und somit ist $\vec{E}$ ein \textbf{konservatives Potential V} zuordenbar.}
+\end{center}
+
+\subsection{Stationäre elektrische Ströme}
+Den Transport von elektrischen Ladungen nennt man Strom
+\begin{equation}
+I = \frac{dQ}{dt} = \int{\vec{j} \cdot d\vec{A}}
+\end{equation}
+wobei $j$ die \textbf{elektrische Stromdichte} ist. Die Kontinuitätsgleichung besagt, dass elektrische Ladungen weder erzeugt noch zerstört werden können. \\
+Als Ladungsträger kommen hauptsächlich Elektronen und positive sowie negative Ionen in Frage. Bei elektronischen Leitern sind es hauptsächlich Elektronen, bei Ionenleitern hauptsächlich Ionen und bei gemischten Leitern kommen beide vor. Die \textbf{technische Stromrichtung} ist definiert als die Flussrichtung der \textbf{positiven Ladungsträger}, der technische Fluß geht also immer von \textbf{Plus nach Minus}.
+Ohne äußeres Feld bewegen sich Ladungsträger ungeordnet und haben eine mittlere Geschwindigkeit von 0. Beim Ladungstransport stoßen Ladungsträger zusammen und geben dabei Energie ab, entlang eines Leiters findet stets ein Spannungsabfall statt, der die nötige Feldstärke zum Transport zur Verfügung stellt. \\
+Für die Leistung gilt
+\begin{equation}
+P = U \cdot I = \frac{U^2}{R} = I^2 \cdot R
+\end{equation}
+
+\subsubsection{Stromquellen}
+Diese basieren auf einer Trennung von positiven und negativen Ladungen, bei dieser Trennung muss Arbeit geleistet werden. Räumlich getrennte Ladungen haben eine Potentialdifferenz, verbindet man diese beiden so fließt ein Strom, der vom äußeren Widerstand bestimmt wird.
+
+\subsection{Statische Magnetfelder}
+Magnete haben \textbf{immer Dipolcharakter}. Im \textbf{homogenen Magnetfeld} haben magnetische Dipole keine resultierenden Kräfte. Im \textbf{inhomogenen Feld} wirkt ein \textbf{Drehmoment} nd auch eine Kraft $\vec{F} = -\vec{p}_m\cdot \vec{B}$. \\
+Für die Wirkung zwischen zwei Permanentmagneten gilt
+\begin{equation}
+\vec{F} = \frac{1}{4 \pi \mu_0}\frac{p_1 \cdot p_2}{r^2}\cdot \vec{r}_e \text{ mit } \mu_0 = 4\pi \cdot 10^{-7} \frac{Vs}{Am}
+\end{equation}
+Dabei ist $p$ die sogenannte Polstärke und $\mu_0$ die \textbf{magnetische Permeabilitätskonstante}. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -254,5 +352,5 @@ Es gilt also neben dem Impulssatz auch der Energiesatz der Mechanik
 
 
 
-  
+   
 \end{document}
