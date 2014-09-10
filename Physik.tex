@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper,ngerman]{article}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage[utf8]{inputenc}
 %Layout
 \setlength{\topmargin}{1pt} \setlength{\headheight}{0.3cm}
@@ -91,7 +92,165 @@ Kräfte können zum Beispiel gemessen werden durch \textit{Verformung} einer Fed
 \begin{equation}
 F_x = D(x-x_0), \text{ wobei D...Federkonstante und } x-x_0 \text{...Auslenkung entspricht}
 \end{equation}
-Ein \textit{Wiegen} von Körper mittels einer Balkenwage wird als \textit{Massevergleich} und nicht als \textit{Kraftbestimmung} bezeichnet. 
+Ein \textit{Wiegen} von Körper mittels einer Balkenwage wird als \textit{Massevergleich} und nicht als \textit{Kraftbestimmung}
+bezeichnet.
+Die auf einen Körper wirkenden Kräfte sind meist vom Ort abhängig, somit kann jedem Punkt im Raum ein Kraftvektor zugeordnet werden, man spricht dann von einem \textit{Kraftfeld}. \\
+Das \textbf{Gravitationsfeld der Erde} ist gegeben als
+\begin{equation}
+\vec{F} = -G \frac{m \cdot M}{r^2}\vec{e_r} \text{ wobei M...Erdmasse, m...Körpermasse und G...Gravitationskonstante}
+\end{equation}
+und das \textbf{Kraftfeld einer elektrischen Ladung} ist gegeben als
+\begin{equation}
+\vec{F} = \frac{1}{4 \pi \epsilon_0}\frac{q \cdot Q}{r^2}\vec{e_r}
+\end{equation}
+dabei erhält man ein Coulombfeld, dass dem Schwerefeld einer kugelförmigen Masse entspricht. \vspace{0.5cm}\\
+\textbf{Homogenes Kraftfeld eines Plattenkondensators} Die Feldlinien sind hierbei parallel zueinander und haben die gleiche Richtung, ein solches Feld wird \textbf{homogen} genannt. 
+
+\subsubsection{Grundgleichungen der Mechanik}
+
+\textbf{1. NEWTON'sches Axiom}:
+
+\begin{verse}
+Jeder Körper verharrt im \textbf{Zustand der Ruhe} oder der gleichförmigen, geradlinigen Bewegung, solange \textbf{keine Kraft} auf ihn einwirkt. 
+\end{verse}
+
+\vspace{0.5cm}
+
+\textbf{2. NEWTON'sches Axiom}:
+
+\begin{verse}
+Eine \textbf{zeitliche Änderung} der Bewegungsgröße ist der bewegenden Kraft, durch die sie verursacht wird, \textbf{proportional} und verläuft \textbf{in Richtung der Kraft.}
+\end{verse}
+
+\vspace{0.5cm}
+
+\textbf{3. NEWTON'sches Axiom}:
+
+\begin{verse}
+Bei zwei Körpern, die \textbf{nur miteinander}, aber \textbf{nicht mit anderen Körpern} wechselwirken, ist die Kraft $\vec{F_1}$ auf den einen Körper entgegengesetzt gleich der Kraft $\vec{F_2}$ auf den anderen Körper. \\
+\begin{center}
+\textbf{Actio = Reactio: $F_1 = F_2$}
+\end{center}
+\end{verse}
+
+\vspace{0.5cm}
+
+Als Maß für den Bewegungszustand führt man eine Bewegungsgröße ein, den \textbf{Impuls}
+\begin{equation}
+p = m \cdot v , \quad p = [kgms^{-1}]
+\end{equation}
+Die Impulsänderung wirkt als Kraft und ist definiert als
+\begin{equation}
+F = \frac{dp}{dt} \text{und wegen } p = m \cdot v \text{ gilt } F = m \cdot \frac{dv}{dt} + \frac{dm}{dt}\cdot v
+\end{equation}
+Ist die \textbf{Masse zeitlich konstant}, so erhält man wiederum 
+\begin{equation}
+F = m \cdot a
+\end{equation}
+Ein \textbf{Kraftstoß} ist eine zeitabhängige Kraft F und ruft eine \textbf{Impulsänderung} hervor. \\
+Da auf ein abgeschlossenes System keine äußeren Kräfte wirken, kann man daraus schließen, dass der Gesamtimpuls des Systems erhalten bleibt, es gilt also
+\begin{equation}
+p_1 + p_2 = const
+\end{equation}
+\begin{verse}
+In einem abgeschlossenen System bleibt der \textbf{Gesamtimpuls konstant}. 
+\end{verse}
+\textbf{Träge und schwere Masse}: \textit{Trägheit} ist die Eigenschaft einer Masse, in ihrem Bewegungszustand zu verharren, wenn keine Kraft auf sie wirkt. Die Kraft zur Änderung ist proportional zur Masse. Schwere Masse ist das Gewicht hervorgerufen durch die Gravitationskraft. \\
+Schwere und träge Masse ist nicht unterscheidbar. 
+
+\pagebreak
+
+\subsubsection{Der Energiesatz der Mechanik}
+Legt ein Massepunkt in einem Kraftfeld F(r) das Wegelement $\Delta r$ zurück, so nennen wir das Skalarprodukt
+\begin{equation}
+\Delta W = \vec{F}(r) \cdot \Delta \vec{r}, \quad W = [Nm] = \text{Joule}
+\end{equation}
+die \textbf{mechanische Arbeit}, die von der Kraft F am Massepunkt entlang des Weges geleistet wird. Die Arbeit ist eine \textbf{skalare Größe}, die sich aus dem Skalarprodukt zweier Vektoren berechnen lässt
+\begin{equation}
+W = \int_{P_1}^{P_2}{\vec{F}(r) \cdot d\vec{r}}
+\end{equation}
+Die Arbeit pro Zeiteinheit nennt man die \textbf{Leistung}
+\begin{equation}
+P = \frac{dW}{dt}, P = [J/s] = \text{W(Watt)}
+\end{equation}
+
+\vspace{0.5cm}
+\textbf{Wegunabhängige Arbeit und konservative Kraftfelder}\\
+\begin{verse}
+In konservativen Kraftfeldern ist die Arbeit bei der Bewegung eines Massenpunktes auf einem geschlossenen Weg Null und hängt sonst nur von Anfangs- und Endpunkt, nicht aber dem gewählten Weg ab. 
+\end{verse}
+
+\begin{equation}
+W = \int_{P_1}{P_2}{\vec{F}(r) \cdot d\vec{r}} = E_{pot}(P_1) - E_{pot}(P_2)
+\end{equation}
+Die Kraft, die notwendig ist, um einen Massenpunkt von $P_1$ nach $P_2$ zu verschieben entspricht also der \textbf{Differenz der potentiellen Energie}. Die potentielle Energie in Abhängigkeit von den Ortskoordinaten wird als \textbf{Potential} bezeichnet.
+\begin{equation}
+E_{pot}(\vec{r})= m \cdot V_{pot}(\vec{r}) = m \cdot g \cdot h
+\end{equation}
+Der Nullpunkt der potentiellen Energie ist jeweils Definitionssache, dieser wird also meistens am Boden oder im Unendlichen angenommen. \\
+Die Gesamtenergie bleibt im Fall konservativer Kräfte erhalten, es gilt 
+\begin{equation}
+E = E_{pot} + E_{kin} = const
+\end{equation}
+Der \textbf{Zusammenhang zwischen Kraft und Potential} bei konservativen Kraftfeldern gibt an, dass eine ortsabhängige Kraft vorhanden sein muss
+\begin{equation}
+\vec{F}  = -m \cdot grad \ V_{pot}
+\end{equation}
+
+
+\pagebreak
+
+
+\subsubsection{Drehimpuls und Drehmoment}
+Der Drehimpuls ist definiert als
+\begin{equation}
+\vec{L} = (\vec{r} \times \vec{p})
+\end{equation}
+Bei einer Bewegung in einer Ebene zeigt der Drehimpuls immer in die Normalrichtung senkrecht zur Ebene. \\
+
+Das Drehmoment ist definiert als
+\begin{equation}
+\vec{D} = (\vec{r} \times \vec{F}) = \frac{d\vec{L}}{dt}
+\end{equation}
+es gilt also auch, dass die \textbf{zeitliche Änderung des Drehimpulses gleich dem wirkenden Drehmoment} ist. Es gelten auch Erhaltungssätze für den Drehimpuls. \\
+Der \textbf{Eigendrehimpuls} bezieht sich auf die Rotation um eine Achse durch den Körperschwerpunkt, er ist gegeben durch das Produkt von \textbf{Trägheitsmoment I} und \textbf{Winkelgeschwindigkeit $\omega$}. 
+\begin{equation}
+\vec{L}_{eigen} = I \cdot \omega
+\end{equation}
+Der \textbf{Bahndrehimpuls} bezieht sich auf den Nullpunkt des Koordinatensystems und ist identisch mit dem Drehimpuls. 
+
+\subsubsection{KEPLER'sche Gesetze}
+
+\begin{enumerate}
+\item Die Bahnen der Planeten sind Ellipsen, in deren Brennpunkt die Sonne steht \\
+\item Der Fahrstrahl (Radiusvektor) überstreicht in gleichen Zeiten gleiche Flächen. \\
+\item Die Quadrate der Umlaufzeiten zweier Planeten verhalten sich wie die Kuben der großen Ellipsenhalbachsen. 
+\end{enumerate}
+
+\subsubsection{Stoßvorgänge}
+Als \textbf{Stoß} bezeichnet man eine kurzzeitige Kraftwirkung zwischen zwei relativ zueinander bewegten Körpern. \\
+\textbf{Elastische Stöße}: Hierbei bleibt die gesamte kinetische energie der stoßenden Körper erhalten. 
+Es gilt also neben dem Impulssatz auch der Energiesatz der Mechanik 
+\begin{equation}
+\frac{m_1\cdot v_1^2}{2} + \frac{m_2 \cdot v_2^2}{2} = \frac{m_1 \cdot v_1^{\prime2}}{2} + \frac{m_2 \cdot v_2^{\prime2}}{2}
+\end{equation}
+\textbf{Unelastische Stöße}: Hierbei gilt zwar der Impulssatz, aber nicht der Energiesatz der Mechanik, ein bestimmter Energieanteil wird also in Wärme oder eine andere Form umgewandelt. Es kommt also ein Summand Q dazu, der Verluste widerspiegelt. 
+
+\begin{equation}
+\frac{m_1\cdot v_1^2}{2} + \frac{m_2 \cdot v_2^2}{2} = \frac{(m_1 + m_2)  v^{\prime2}}{2} + Q
+\end{equation}
+
+\pagebreak
+
+\section{Elektrizitätslehre}
+
+
+
+
+
+
+
+ 
 
 
 
