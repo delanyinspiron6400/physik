@@ -26,7 +26,7 @@ Es werden dabei das Skriptum sowie die Ausarbeitungen von Bernhard Geiger, Matth
   
 \pagebreak
   
-  
+\renewcommand{\arraystretch}{1.5}
 %-------------------------------------------------------------------------------
 %
 % Beginn der Zusammenfassung
@@ -325,7 +325,136 @@ Für die Wirkung zwischen zwei Permanentmagneten gilt
 \begin{equation}
 \vec{F} = \frac{1}{4 \pi \mu_0}\frac{p_1 \cdot p_2}{r^2}\cdot \vec{r}_e \text{ mit } \mu_0 = 4\pi \cdot 10^{-7} \frac{Vs}{Am}
 \end{equation}
-Dabei ist $p$ die sogenannte Polstärke und $\mu_0$ die \textbf{magnetische Permeabilitätskonstante}. 
+Dabei ist $p$ die sogenannte Polstärke und $\mu_0$ die \textbf{magnetische Permeabilitätskonstante}. \\
+Alle \textbf{magnetischen Feldlinien} sind \textbf{geschlossen}, es gilt also $div \ \vec{B} = 0$ und der Fluss durch eine geschlossene Fläche ist Null. 
+\begin{center}
+\textit{Das \textbf{statische elektrische Feld} ist also \textbf{wirbelfrei}, während das \textbf{statische magnetische Feld} Wirbel besitzt.}
+\end{center}
+Um einen stromdurchflossenen Leiter bildet sich ein Magnetfeld (mit der Rechtsschraubregel). Ein zu einer Spule gewickelter Leiter erzeugt ein annähernd homogenes Magnetfeld im Inneren. Der magnetische Fluss ist gegeben als
+\begin{equation}
+\Phi_m = \int_{A}{\vec{B}\cdot d\vec{A}}
+\end{equation}
+Weiter gilt, dass die magnetische Erregung entlang eines Weges die Summe aller umschlossenen Ströme ist
+\begin{equation}
+\oint{\vec{H} \cdot d\vec{s}} = I
+\end{equation}
+
+\subsubsection{Kräfte auf bewegte Ladungen im Magnetfeld}
+
+Man beobachtet, dass die Kraft stets senkrecht zum Geschwindigkeitsvektor der bewegten Ladung und senkrecht zum Vektor des magnetischen Feldes wirkt, die Kraft nennt man die \textbf{Lorentz-Kraft}
+\begin{equation}
+\vec{F} = q\cdot (\vec{v} \times \vec{B})
+\end{equation}
+Werden Elektronen in einem Leiter geführt, so können sie sich nicht ganz frei bewegen, daher wird auf den Leiter selbst eine Kraft ausgeübt
+\begin{equation}
+\vec{F} = \int_{L_1}^{L_2}{(\vec{j} \times \vec{B}) \ dV}
+\end{equation}
+
+\pagebreak
+
+
+\subsubsection{HALL-Effekt}
+Die auf die Ladungsträger wirkende Lorentz-Kraft verursacht eine Ablenkung der Ladungsträger senkrecht zum Leiter, wobei sich zwischen den Berandungen des Leiters die Hallspannung $U_H$ aufbaut. Die Kraft auf die Ladungsträger im zugehörigen elektrischen Feld $E_H$ kompensiert die Lorentz-Kraft. Dieser Effekt wird oft zur \textbf{Magnetfeldmessung} eingesetzt (HALL-Sonde). 
+
+\subsubsection{Zusammenhang zwischen elektrischem und magnetischem Feld}
+Das Magnetfeld eines Stromes und die LORENTZ-Kraft lassens ich aus dem COULOMB-Gesetz herleiten. Das Magnetfeld ist eine Änderung des elektrischen Feldes bewegter Ladungen, daher auch \textbf{elektromagnetisches Feld} genannt. 
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{| r |  l |}
+    \hline
+    elektrisches Feld & magnetisches Feld  \\ \hline \hline
+    $rot \ \vec{E} = 0$ & 	$rot \ \vec{B} = \mu_0 \cdot \vec{j}$  \\ \hline
+    $div \ \vec{E} = \rho / \epsilon_0$ & $div \ \vec{B} = 0$  \\ \hline
+    $\vec{E} = -grad \ \Phi$ & $\vec{B} = rot \ \vec{A}$ \\ \hline
+    $\vec{j} = \sigma \cdot \vec{E}$ & $\epsilon_0 \cdot \mu_0 = 1 / c^2$ \\
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{Zusammenhang der bisher verarbeiteten wichtigen Vektorgrößen}
+\end{table}
+
+\subsubsection{Materie in magnetischen Feldern}
+
+Es gilt allgemein
+\begin{equation}
+B_{Materie} = \mu \cdot B_{Vakuum} = \mu \cdot \mu_0 \cdot H_{Vakuum}
+\end{equation}
+Dabei nennt man $\mu$ die \textbf{relative Permeabilität} und ähnlich wie beim elektrischen Feld beobachtet man eine magnetische Polarisierung der Materie. \\
+\textbf{Diamagnetische Stoffe} besitzen kein permamentes magnetisches Dipolmoment, die induzierten Dipole entstehen so, dass sie dem äußeren Feld entgegengesetzt orientiert sind. \\
+\textbf{Paramagnetische Stoffe} besitzen permanente magnetische Dipolmomente, die aber statistisch verteilt sind, dass äußere Feld richtet die magnetischen Dipole teilweise aus, wodurch dir Magnetisierung stark zunimmt. 
+\\
+\textbf{Ferromagnetische Stoffe} haben permanentes magnetisches Verhalten, es entstehen sogenannte WEISS'sche Bezirke, in denen sich magnetische Dipole parallel ausrichten. Nach Wegnahme des Feldes richten sich die Orientierungen der einzelnen Bezirke wieder statistisch aus, die Magnetisierung hängt von der Vorgeschichte ab (\textbf{Hysterese}).
+
+\pagebreak 
+
+\subsection{Zeitlich veränderliche elektrische und magnetische Felder}
+\subsubsection{Induktion}
+Wenn sich ein Leiter in einem magnetischen Feld bewegt, wird eine Spannung induziert. \begin{equation}
+U_{ind} = -\frac{d\Phi_m}{dt}
+\end{equation}
+Der Spannungsstoß ist bei langsamer bzw. schneller Durchführung gleich groß.
+\begin{center}
+\textit{Ein \textbf{zeitlich veränderndes magnetisches Feld} erzeugt ein \textbf{elektrisches Wirbelfeld} mit \textbf{geschlossenen Feldlinien}. Es gilt ganz allgemein $rot \ \vec{E} = -\frac{d\vec{B}}{dt}$}
+\end{center}
+
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{| c |  c | c |}
+    \hline
+    Art des elektrischen Feldes & elektrostatisch & Wirbelfeld  \\ \hline \hline
+    Quelle & 	Ladungen & erzeugt durch $d\vec{B}/dt$ \\ \hline
+    Feldlinien & offen $\Rightarrow$ $rot \ \vec{E} = 0$ & geschlossen $rot \ \vec{E} = -d\vec{B}/dt$    \\ \hline
+    Potential & konservativ $\Rightarrow \vec{E} = -grad \ \Phi$ & nicht darstellbar als Gradient \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{Gegenüberstellung}
+\end{table}
+ Es ist also völlig verschieden vom statischen elektrischen Feld, dessen Feldlinien offen sind. 
+
+\subsubsection{Selbstinduktion}
+Dies bedeutet, dass eine der erzeugenden Spannung entgegengesetzte induzierte Spannung entsteht, dies hemmt das Ansteigen des Stromes und erzeugt beim Abschalten eine Spitzenspannung. \\
+Die im magnetischen Feld enthaltene Energie wird berechnet durch
+\begin{equation}
+W_{magn} = \frac{I^2\cdot L}{2}
+\end{equation}
+
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{| c | c |}
+    \hline
+    Elektrisches Feld & Magnetisches Feld  \\ \hline \hline
+    $W_{el} = \frac{1}{2} C \cdot U^2$ & $W_{magn} = \frac{1}{2} L \cdot I^2$ \\ \hline
+    $u_{el} = \frac{1}{2}\epsilon_0 E^2$ & $u_{magn} = \frac{1}{2}\mu_0 \cdot H^2 = \frac{1}{2\mu_0}B^2$ \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{Gegenüberstellung}
+\end{table}
+
+\subsubsection{Verschiebungsstrom}
+Dieser wird definiert als das Verschieben von Ladungen über (nicht verbundene) Kondensatorplatten. Magnetfelder werden als nicht nur von Strömen erzeugt, sondern auch von sich ändernden elektrischen Feldern. 
+
+\pagebreak
+
+\subsection{Elektromagnetische Schwingungen und Wellen}
+
+Eine Schaltung aus Kondensator $C$ und Spule $L$ bildet einen \textbf{elektromagnetischen Schwingkreis}. $C$ sei mit $W_{el} = \frac{C \cdot U^2}{2}$ geladen. Beim Entladen lädt sich die Spule mit $W_{magn} = \frac{L \cdot I^2}{2}$ auf. Ist ein Widerstand $R$ vorhanden, erfolgt die Schwingung gedämpft. \\
+Es gibt 3 Arten, wie ein Schwingkreis schwingen kann
+
+\begin{enumerate}
+\item Im \textbf{Schwingfall} handelt es sich um eine echte gedämpfte Schwingung, beim \textbf{aperiodischen Grenzfall} schwingt der Kreis einmal und stoppt danach und beim \textbf{Kriechfall} wird langsam eine Amplitude aufgebaut, die sich aber gleich mit der Dämpfung wieder Null nähert. 
+\item Bei der \textbf{erzwungenen Schwingung} wird der Schwingkreis von außen mit der Frequenz $\omega$ angeregt. Im Resonanzfall wird die Schwingungsamplitude hierbei sehr groß. \item Eine \textbf{ungedämpfte elektrische Schwingung} kann durch Zuführung der verlorenen Energie über eine Rückkopplung erreicht werden. Die MEISSNER-Schaltung war eine der ersten brauchbaren Schaltungen dieser Art.
+\end{enumerate}
+Die Informationsübertragung über elektromagnetische Wellen erfolgt durch Modulation des Signals. Bei der \textbf{Stabantenne} handelt es sich um einen offenen Schwingkreis, der elektromagnetische Wellen abstrahlt. Die optimale Länge der Antenne ist $l = \lambda/2$ und die abgestrahlte Leistung entspricht ungefähr $\omega^4$. Bei der Ausbreitung der Wellen wechseln sich ständig elektrische und magnetische Energie ab $\vec{E} \bot \vec{B}$. 
+
+\pagebreak
+
+\section{Optik}
+\subsection{Elektromagnetische Wellen}
+
+
+
+
+
 
 
 
