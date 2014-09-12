@@ -836,53 +836,301 @@ In der Quantenmechanik gibt es aber auch eine Wahrscheinlichkeit, dass das Teilc
 Dieser Effekt wird in der Elektronik bei der \textbf{Tunneldiode} ausgenutzt. 
  
 
+
+
 \section{Atomphysik}
 \subsection{Atommodelle}
-
 \subsubsection*{THOMSON}
+Atome sind zusammengesetzt aus positiven und negativen Ladungen, genannt das Rosinenkuchenmodell, die positiven Ladungen sind dabei gleichmäßig über das Volumen verteilt und die negativen Ladungen nehmen Gleichgewichtslagen an, um die sie stabile Schwingungen ausführen können. 
 
 \subsubsection*{Dynamidenmodell von LENARD}
+Aus Kathodenstrahlversuchen durch Materie (dünne Folien) schloss man, dass Atome viel leeren Raum haben, es wurde als Anhäufung positiv und negativ geladener "Kügelchen" betrachtet. 
 
 \subsubsection*{RUTHERFORD}
+RUTHERFORD führte Streuversuche durch mit den damals neu entdeckten $\alpha$-Teilchen an dünnen Folien und beobachtete selten eine Ablenkung um große Winkel. Die Folgerung daraus war, dass die positive Ladung an einer Stelle im Atom konzentriert sein musste $\Rightarrow$ Atomkern. Die Elektronen befänden sich auf Kreisbahnen um den Kern. \\
+Die Problematik mit diesem Modell war, dass nach der klassischen Physik diese Elektronen aufgrund von Energieverlusten irgendwann in den Kern stürzen müssten.  
 
 \subsubsection*{BOHR}
+Dieser erweiterte das RUTHERFORDsche Atommodell um zwei Postulate, die die \textbf{Stabilität durch Quantelung} erklären.
+\begin{center}
+ \textit{Es gibt \textbf{bestimmte, stabile Bahnen}, auf denen das Elektron \textbf{strahlungsfrei} umlaufen kann.}
+ \end{center} 
+ 
+ \begin{center}
+ \textit{Beim \textbf{Übergang} von einer Bahn höherer Energie zu einer Bahn geringerer Energie wird die \textbf{Differenz der Bahnenergien} als \textbf{Lichtquant} emittiert (Umkehr: Absorption)}. 
+ \end{center}
+ 
+ Beide Postulate lassen sich nicht mit der klassischen Physik vereinigen, die Kreisbewegung ist eine beschleunigte Bewegung und sollte zu einer Abstrahlung von elektromagnetischer Energie führen und diese müsste mit der Umlauffrequenz der Elektronen erfolgen. 
+ 
+BOHR nimmt an, dass sich die Elektronen auf \textbf{Kreisbahnen um den Kern} bewegen. Für die \textbf{Wechselwirkung} zwischen Kern und Elektronen gelten die Gesetze der klassischen Mechanik und Elektrostatik.  
+ 
 
 \subsection{Spektrum des H-Atoms}
 
 \subsubsection*{BALMER und RYDBERG-Formel}
 
+Atome strahlen diskrete, für das jeweilige chemische Element charakteristische Frequenzen ab, darauf begründet sich die \textbf{Chemische Spektralanalyse}. \\
+Charakteristische Frequenzen bei der chemischen Spektralanalyse, die empirische Beschreibung der Abfolge der Wellenlängen gelang BALMER mit 
+\begin{equation}
+\lambda = 3646 \cdot \frac{n^2}{n^2 - 4}[\mathring{A}]
+\end{equation}
+n ist hierbei eine Laufvariable, die identisch ist mir der später eingeführten Hauptquantenzahl. \\
+Die \textbf{Wellenzahl} ist definiert als die Anzahl der Wellenlängen pro Längeneinheit
+\begin{equation}
+\overline{\nu} = \frac{1}{\lambda} \text{ Wellenzahl = Anzahl der Wellenlängen pro cm}
+\end{equation}
+RYDBERG formte die BALMER-Formel um und erhielt
+\begin{equation}
+\overline{\nu} = \overline{R_H}\left( \frac{1}{2^2}- \frac{1}{n^2}\right)\text{ mit } \overline{R_H} \text{ der RYDBERG-Konstante}
+\end{equation}
+
+
+
 \subsubsection*{Termschema}
+Separiert man die in der RYDBERG-Formel vorkommenden mathematischen Terme, ist die Aussendung von Lichtquanten der Energie $h \cdot \nu$ deutbar als Übergang zwischen zwei \textbf{Energietermen}. In einem sogenannte Termschema werden die Energieterme als waagrechte Linien eingetragen, die im Spektrum beobachteten Spektrallinien können als Übergänge zwischen diesen betrachtet werden. Als Energienullpunkt wird die \textbf{Ionisierungsenergie} verwendet, das ist jene Energie, die aufzuwenden ist, um das Elektron vom Grundzustand (n=1) in den Zustand n = $\infty$ (freies Elektron mit $E_{kin} = 0$) anzuheben. Diese wird in Elektronenvolt (eV) angegeben
+\begin{equation}
+E_{ion} = \frac{1}{(4 \pi \epsilon_0)^2}\frac{me^4}{2\hbar^2}Z^2
+\end{equation}
+Die Energie der Terme mit $n > 1$ lässt sich somit angeben mit
+\begin{equation}
+E_n = -E_{ion}\frac{1}{n^2}
+\end{equation}
+
+\pagebreak
+
 
 \subsubsection*{FRANK-HERTZ-Versuch}
+FRANCK und HERTZ gelang der erste, nicht-spektroskopische Beweis der Existenz diskreter Energiestufen(-niveaus) bei Atomen. In Quecksilberdampf driften die aus der geheizten Kathode C austretenden Elektronen unter dem Einfluss der zwischen C und der Anode A liegenden Spannung U und stoßen nach Durchlaufen der "mittleren freien Weglänge" mit Hg-Atomen zusammen. Die Anode ist als Gitter ausgeführt und die Elektronen können hindurchtreten und aufgrund ihrer kinetischen Energie gegen die Gegenspannung anlaufen, was einen Strom verursacht, der messbar ist. \\
+Ist die \textbf{Energieaufnahme} der Elektronen \textbf{kleiner als die erste Anregungsenergie} der Quecksilberatome, so können nur \textbf{elastische Stöße} stattfinden. Es wird dabei keine Energie abgegeben. \\
+Überschreitet die kinetische Energie der Elektronen einen Mindestwert, so können die Elektronen einen Teil ihrer Energie in Form von Anregungsenergie übertragen, es finden daher \textbf{inelastische Stöße} statt, sie kommen mit verringerter Energie zur Anode und der \textbf{Strom sinkt}. Bei Quecksilber liegen die Maxima 4.9V auseinander, die Anregungsenergiestufe liegt somit bei 4.9 eV. Beim Zurückfallen wird Strahlung abgegeben, es gilt dabei
+\begin{equation}
+\Delta E = h \cdot \nu = \frac{h \cdot c}{\lambda} = 4.9 eV \quad \Rightarrow \quad \lambda=2520 \mathring{A} \text{ zu erwarten}
+\end{equation}
+
+
 
 \subsection{Lösung der Schrödinger Gleichung für ein Elektron}
+Verwendet wird hierbei die zeitfreie SCHRÖDINGER-Gleichung
+\begin{equation}
+\Delta \Psi + \frac{2m}{\hbar^2}(E-U)\Psi = 0
+\end{equation}
+Da das Elektron im COULOMG-Feld des Kern ist, muss die Schrödinger Gleichung in Kugelkoordinaten umgerechnet werden. Jetzt müssen physikalische Randbedingungen eingeführt werden
+\begin{itemize}
+\item Eindeutigkeit auf der Kugeloberfläche
+\item Verschwinden der Funktion im Unendlichen
+\item Normierung der Aufenthaltswahrscheinlichkeit
+\end{itemize}
+Die \textbf{Wellenfunktion} muss in ein \textbf{Produkt von Funktionen mit je einem Parameter} zerlegt werden, eine \textbf{Separationskonstante} $A = \ell(\ell+1)$ wird errechnet. $\ell$ ist die \textbf{Bahndrehimpuls-Quantenzahl}. Eine weitere Konstante wird eingeführt: $B = m_\ell^2$ wobei $m_\ell$ die \textbf{magnetische Bahndrehimpuls-Quantenzahl} ist. \\
+Nun kann man die komplexe Schrödingergleichung in Kugelform in drei einfachen Differentialgleichungen anschreiben. Nun werden die Randbedingungen umgesetzt. \\
+$m_\ell$ muss eine \textbf{ganze Zahl} sein, daraus kann man die Existenz ganzer Quantenzahlen ableiten. Als Einschränkung muss gelten
+\begin{equation}
+- \ell \leq m_\ell \leq \ell
+\end{equation}
+
+Im Radiusteil der Gleichung ist die \textbf{Gesamtenergie} $E = E_{kin} + U$ enthalten. 
+\begin{itemize}
+\item $E  >  0$: Das Elektron ist nicht an den Kern gebunden und besitzt kinetische Energie
+\item $E  >  0$: Das Elektron ist an den Kern gebunden, die Gleichung ist aber nur für bestimmte Werte lösbar (Quantelung)
+\item $E  =  0$: Elektron unendlich weit vom Kern entfernt
+\end{itemize}
+Unter der Erfüllung der Bedingungen für sinnvole Lösungen ergeben sich die Energieeigenwerte zu
+\begin{equation}
+E_n = -h \cdot c \cdot \overline{R}_\infty \cdot \frac{Z^2}{n^2}
+\end{equation}
+n ist hierbei die Hauptquantenzahl und für $\ell$ gilt
+\begin{equation}
+0 \leq \ell \leq n-1
+\end{equation}
+Die Schrödinger-Gleichung liefert also
+\begin{itemize}
+\item Energiequantelung
+\item Quantenzahlen $n,\ell,m_\ell$
+\item Das Ergebnis der Energieeigenwerte ist das selbe wie bei den BOHRschen Berechnungen
+\end{itemize}
+$\ell$ kann deshalb als Drehimpuls angesehen werden, da nach Aufstellen einer Operatorgleichung für $|\vec{L}_\ell|$ $\ell$ mit dem Winkelteil der separierten Energiegleichung übereinstimmt. 
+
 
 \subsection{Ladungsdichteverteilung des Elektrons um den Atomkern}
 
+Das Quadrat der Wellenfunktion ist die räumliche Aufenthaltswahrscheinlichkeit für ein Elektron, man spricht von einer "Ladungswolke" nach der SCHRÖDINGERschen Vorstellung, diese ist nicht eben sondern hat eine räumliche Verteilung.  
+
 \subsubsection*{Azimutale Verteilung}
+Der Winkelanteil der Schrödinger-Lösung gibt den Winkel an, den die Ladung bevorzugt. Ein \textbf{Orbital} ist die räumliche Gestalt der Elektronenwolke.
 
 \subsubsection*{Radiale Ladungsdichteverteilung}
+Dies gibt die Wahrscheinlichkeit für den Aufenthalt des Elektrons innerhalb einer Kugelschale an. Es zeigt sich eine Übereinstimmung mit den BOHRschen Radien: Die maximale Aufenthaltswahrscheinlichkeit liegt für $\ell = n-1$ gerade bei den BOHRschen Radien(genau ein Maximum). Bei $\ell = 0$ gibt es $n$ Maxima. Bei $n=4,\ell = 0$ (4s-Zustand) liegt das Hauptmaximum weit außerhalb des Zustandes $n=3, \ell = 2$, besitzt aber Nebenmaxima in Kernnähe. Das 4s-Eletron ist bei schwereren Kernen daher stärker gebunden als ein 3d- Elektron. 
+\pagebreak
 
 \subsection{Erweiterung bisheriger Betrachtungen}
+Zur Berechnung der Wasserstoff-Feinstrukturterme muss man relativistische Eigenschaften betrachten
+\begin{itemize}
+\item \textbf{Eigendrehimpuls} (Spin)
+\item \textbf{magnetisches Moment} $\mu_s$ des Elektrons
+\end{itemize}
+Zur Berechnung der gesamten Elektronenenergie ist also nicht nur die Bahnenergie (kinetische Energie) und die potentielle Energie maßgebend, sondern auch noch eine Zusatzenergie, die von der \textbf{Wechselwirkung zwischen Bahndrehimpuls und Eigendrehimpuls} herrührt. 
+\begin{center}
+\textit{Unter Berücksichtigung des Elektronenspins s = $1/2$ sind \textbf{$4$ Quantenzahlen} notwendig, um einen Elektronenzustand zu beschreiben. }
+\end{center}
+
 
 \subsection{Bedeutung der Quantenzahlen}
 
+\begin{itemize}
+\item \textbf{Hauptquantenzahl n}: Die Energie ist näherungsweise proportional zu $\frac{1}{n^2}$
+\item \textbf{Bahndrehimpulsquantenzahl $\ell$}: Das Elektron besitzt auf seiner \textbf{Bahnbewegung} einen \textbf{Bahndrehimpuls} $\vec{L}_\ell$. Für den Betrag gilt $|\vec{L_\ell}| = \sqrt{\ell (\ell + 1)}\cdot \hbar$ mit $\ell = 0,1,2,...,n-1$. Allgemein für quantenmechanische Drehimpulse gilt \\ $|\vec{L_q}| = \sqrt{q (q + 1)}\cdot \hbar$
+\item \textbf{Spinquantenzahl s}: $|\vec{L_s}| = \sqrt{s (s + 1)}\cdot \hbar$, kann nur den Wert s = 1/2 annehmen
+\item \textbf{Orientierungsquantenzahl für Bahndrehimpuls $m_l$}: Projektion des Winkels: $|\vec{L_{\ell,z}}| = m_l \cdot \hbar$
+\item \textbf{Orientierungsquantenzahl für Elektronenspin $m_s$}: $|\vec{L_{\ell,s}}| = m_s \cdot \hbar$ mit $m_s = \pm 1/2$
+\end{itemize}
+
 \subsection{Spektrallinien, Auswahlregeln für Dipolstrahlung}
-
-\subsection{Chemische Elemente mit einem Elektron außerhalb einer Schale}
-
-\subsection{Zweielektronensysteme}
-
-\subsection{Periodensystem}
-
-\subsection{Atom in äußeren Feldern}
-
-\subsection{Strahlende Übergänge}
-
-\subsection{Röntgenspektren}
+Die Energiedifferenz zwischen zwei Elektronenbahnen ist definiert als
+\begin{equation}
+E_n - E_{n'} = h \cdot \nu
+\end{equation}
+Die abgestrahlten Frequenzen entsprechen den Spektrallinien, die Wellenlänge gibt aber nur Information über die Energiedifferenz ab. Es gibt \textbf{Auswahlregeln} für die \textbf{optischen Übergänge} zwischen atomaren Niveaus. Klassisch würde ein zeitlich veränderlicher elektrischer Dipol (Elektronen auf Kreisbewegung um den Kern) ständig elektromagnetische Energie abstrahlen, quantenmechanisch gibt es aber stabile Bahnen ohne Strahlung, zu Strahlung kommt es nur bei einem Übergang zwischen Bahnen. Man kann aus der \textbf{Wellenfunktion des Anfangs- und Endzustandes} die \textbf{Übergangswahrscheinlichkeit} berechnen. 
+Die Auswahlregeln für das Einelektronensystem sind somit
+\begin{itemize}
+\item $\Delta \ell = \pm 1$
+\item $\Delta j = 0,\pm 1$
+\item $\Delta s = 0$
+\end{itemize}
 
 
 \pagebreak
+
+\subsection{Chemische Elemente mit einem Elektron außerhalb einer Schale}
+Das Elektron auf einer Kreisbahn um den Kern repräsentiert eine Strom I, da die Stromschleife sehr klein ist, entspricht sie daher einem rotierenden magnetischen Dipol. Das \textbf{magnetische Moment} eines Elektrons ist mit seinem \textbf{mechanischen Moment} verknüpft. Das \textbf{magnetische Moment der Bahn} erhält man mit
+\begin{equation}
+\vec{\mu_\ell} = -\frac{\mu_B}{\hbar} \cdot \vec{L_\ell} \text{  mit  } \mu_B = \frac{\mu_0\cdot e}{2m} \cdot \hbar \text{ das BOHRsche Magneton}
+\end{equation}
+Das magnetische Moment steht immer \textbf{antiparallel zum mechanischen Drehimpuls}. \\
+\subsubsection*{Termschemen in Alkalimetallen}
+Sind Atome mit einem Elektron mehr als Edelgase, welche eine \textbf{abgeschlossene Elektronenschale} besitzen und dadurch Gesamtdrehimpuls und Gesamtspin gleich Null haben. Bei Alkalimetallen ist das nun gleich, nur mit einem zusätzlichen "Leuchtelektron". Daher gibt es ähnliche Spektren wie bei Wasserstoff. \\
+Sind $n$ und $\ell$ des Leuchtelektrons groß,so bewegt sich das Leuchtelektron auf kreisähnlichen Bahnen weit außerhalb des Elektronenrumpfes,die Energie des Elektrons $\approx$ Wasserstoff. \\
+Sind $n$ und $\ell$ klein, "taucht" das Leuchtelektron in den Elektronenrumpf ein, auf einem Teil der Bahn gibt es eine \textbf{Kernladungszahl} $Z_{eff} > 1$. Die Folgen sind
+\begin{itemize}
+\item Energieabsenkung der Niveaus relativ zur Energie der Wasserstoff-Terme gleicher Hauptquantenzahl
+\item Die Energie ist stark vom Wert von $\ell$ abhängig
+\item Die Dublettaufspaltung ist viel größer als bei Wasserstoff aufgrund der hohen Spin-Bahn-Wechselwirkung
+\end{itemize}
+Quantenmechanisch gilt: 3s-Elektron hat Maxima der Aufenthaltswahrscheinlichkeit in Kernnähe, 3d eine kleinere Aufenthaltswahrscheinlichkeit. 
+
+\subsection{Zweielektronensysteme}
+
+\subsubsection*{Quantenmechanische Betrachtung des Heliumatoms}
+Zunächst ist die potentielle Energie der Elektronen zu ermitteln, diese wird dann in die SCHRÖDINGER-Gleichung eingesetzt. Eine exakte Lösung ist unmöglich, daher eine Näherung. Bei der 0. Näherung werden die Elektronen \textbf{unabhängig betrachtet}. Dabei wird die berechnete Bindungsenergie zu groß. Bei der 1. Näherung werden die Elektronen noch immer als unabhängig betrachtet, aber die Kernladung wird durch jeweils ein anderes Elektron teilweise abgeschirmt. Die Elektronen können nicht unterschieden werden, daher muss die Aufenthaltswahrscheinlichkeit gleich groß und symmetrisch sein.
+
+\subsubsection*{PAULI-Verbot}
+\begin{center}\textit{In einem Atom können 2 Elektronen nicht den selben Satz von Quantenzahlen haben, sie müssen sich in mindestens einer Quantenzahl voneinander unterscheiden.}\end{center} 
+
+
+\subsection{Periodensystem}
+\subsubsection*{BOHRsches Aufbauprinzip}
+Beim Übergang von einem Element zum nächsten im Periodensystem wird jeweils ein Elektron und ein Proton hinzugefügt, dabei muss das PAULI-Prinzip berücksichtigt werden (wenigstens eine der 4 Quantenzahlen muss sich von den bereits "verbrauchten" Quantenzahlen unterscheiden). Elektronen mit gleicher Hauptquantenzahl fasst man zu einer "Schale" zusammen. 
+Die Anzahl der Elektronen pro Schale ergibt sich zu
+\begin{equation}
+z = 2 \cdot n^2
+\end{equation}
+Nach der \textbf{HUNDschen Regel} werden immer freie Plätze in Schalen mit geringster Hauptquantenzahl zuerst gefüllt. Die 4s-Schale wird vor der 3d Schale gefüllt, da die Aufenthaltswahrscheinlichkeit der 4s-Elektronen in Kernnähe ein Maxima hat. 
+
+\subsection{Atom in äußeren Feldern}
+\subsubsection*{STERN-GERLACH-Versuch}
+Ein Atomstrahl wird durch ein Magnetfeld in zwei Teilstrahlen aufgespalten, diese Spaltung ist Beweis für die Existenz \textbf{halbzahliger Drehimpulse} (Spin s = 1/2), es gibt also nur zwei mögliche Orientierungen ($\pm 1/2$). 
+
+\subsubsection*{Atome in Magnetfeldern (ZEEMAN-Effekt)}
+In einem Magnetfeld $\vec{B}$ besitzt ein magnetischer Dipol die Energie
+\begin{equation}
+E = \vec{\mu} \cdot \vec{B}
+\end{equation}
+Durch das Feld wird eine \textbf{Raumrichtung physikalisch ausgezeichnet} und es erfolgt eine \textbf{Richtungsquantelung}.
+\begin{equation}
+|\vec{L}_{J,z}| = m_J \cdot \hbar
+\end{equation}
+Es existiert daher ein in z-Richtung wirksames magnetisches Moment des Atoms. Ein Energieniveau mit Gesamtdrehimpuls $\vec{L_J}$ spaltet daher in einem äußeren Magnetfeld in $2J+1$ Subniveaus unterschiedlicher Energie auf. Wegen der Spaltung der Feinstrukturniveaus \textbf{spalten }auch die beobachteten \textbf{Spektrallinien} in \textbf{mehrere Komponenten} auf. \\
+Beim Übergang zwischen Singulett-Termen (S = 0, r = 1) tritt der \textbf{normale ZEEMAN-Effekt} auf: Die Energieaufspaltung $\Delta E$ für das untere und obere Niveau ist gleich groß, verschiedene Übergänge haben die selbe Übergangsfrequenz und fallen zusammen. 
+
+Im Linienspektrum sind drei Linienkomponenten zu erkennen, abgestrahltes Licht ist bei gleichbleibender magnetischer Quantenzahl horizontal, sonst senkrecht, zur Feldrichtung polarisiert. 
+
+\subsubsection*{Atome in elektrischen Feldern (STARK-Effekt)}
+Atome, die in gewissen Elektronenzuständen ein \textbf{permanentes, elektrisches Dipolmoment} besitzen, verhalten sich analog zu Atomen in magnetischen Feldern: die Zusatzenergie im Feld ist proportional zur Feldstärke (linearer STARK-Effekt mit $\Delta E \propto E$). Man beobachtet eine \textbf{symmetrische Energieaufspaltung} der Niveaus ähnlich dem ZEEMAN-Effekt. \\
+Ist kein permanentes Dipolmoment vorhanden, wird eines induziert. Die Spektrallinien werden aufgespalten und verschoben(quadratischer STARK-Effekt mit $\Delta E \propto E^2$). 
+
+\subsection{Strahlende Übergänge}
+\subsubsection*{EINSTEINs Betrachtung}
+\begin{itemize}
+\item \textbf{Absorption}: Das Atom absorbiert ein Quant der elektromagnetischen Strahlung und erhöht seine innere Energie um $\Delta E = h \cdot \nu$
+\item \textbf{Stimulierte Emmision}: Hier wird ein Atom im angeregten Zustand durch ein Strahlungsfeld stimuliert und gibt seine Anregungsenergie in Form von Strahlung ab. Das emittierte Photon ist mit dem stimulierenden Photon identisch (kohärente Abstrahlung). 
+\item \textbf{Spontane Emmision}: Hier kehren angeregte Atome nach gewisser Zeit unter Emission eines Lichtquants in den Grundzustand zurück, der Zeitpunkt ist nicht bestimmbar.
+\end{itemize}
+
+\subsection{Röntgenspektren}
+Erzeugung durch Verzögerung von schnellen Elektronen im Feld der Atome eines Festkörpers. Umwandlung der kinetischen Energie in Lichtquanten, die Energie der Photonen ist über einen großen Bereich verteilt, dadurch erhält man kontinuierliche RÖNTGENspektren. \\
+Zuerst wird das aus der Kathode austretende Elektron im zwischen Antikathode und Kathode anliegenden elektrischen Feld beschleunigt
+\begin{equation}
+e \cdot U_0 = \frac{m_e \cdot v_1^2}{2}
+\end{equation}
+Danach wird ein Teil der kinetischen Energie in Photonenenergie umgesetzt
+\begin{equation}
+E_{Photon} = h \cdot \nu = \frac{m_e \cdot v_1^2}{2}- \frac{m_e \cdot v_2^2}{2}
+\end{equation}
+Die Maximalenergie der Photonen und damit die Grenzfrequenz des RÖNTGEN-Bremskontinuums ergibt sich für $v_2 = 0$
+\begin{equation}
+h \cdot \nu_G = \frac{m_e \cdot v_1^2}{2} = e \cdot U_0
+\end{equation}
+Die \textbf{Intensität} der RÖNTGENstrahlung ist von der Anzahl der pro Zeiteinheit auf die Antikathode treffenden Elektronen und damit vom Heizstrom der Kathode abhängig.
+\\
+Aus einer Bestimmung der kürzesten Wellenlänge $\lambda_G$ kann sehr genau das \textbf{PLANCKsche Wirkungsquantum h} bestimmt werden
+\begin{equation}
+h = \frac{e \cdot U_0 \cdot \lambda_G}{c}
+\end{equation}
+
+\subsubsection*{Entstehung des charakteristischen Spektrums}
+Überschreitet die Beschleunigungsspannung einen bestimmten, vom Material der Antikathode abhängigen Wert, so treten im Röntgenspektrum neben dem Bremskontinuum zusätzliche, diesem überlagerte \textbf{RÖNTGENlinien} diskreter Wellenlänge auf, die sogenannte \textbf{charakteristische RÖNTGENstrahlung}. Diese RÖNTENlinien entstehen durch Stoß mit Elektronen der Antikathoden-Atome und das Herausschlagen derer Elektronen. Beim Ersetzen des Lochs mit Elektronen höherer Schalen wird Strahlung abgegeben, ähnlich dem Emissionsspektrum von Wasserstoff. 
+
+\subsubsection*{Spektrale Zerlegung der RÖNTGENstrahlung}
+Die Absolutbestimmung von Wellenlängen erfolgt im optischen Bereich am genauesten durch Beugung am Gitter. Linsen sind nicht einsetzbar, da Röntgenstrahlen das Material ungehindert durchdringen. Daher Beugung bei Kristallen mit Atomabstand von ca $1 \mathring{A}$. Grundlage für diese Messungen ist die \textbf{BRAGGsche Reflexionsbedingung}
+\begin{equation}
+k \cdot \lambda = 2 \ d \sin \varphi
+\end{equation}
+Atome des Kristallgitters können hierbei als Sekundärstrahler genutzt werden. Bei bestimmten Strahlungsrichtungen erhält man konstruktive Interferenz. 
+Alternativ ist auch die Beugung an einem optischen Gitter (ca 600 Linien/mm) möglich, wenn dieses sehr flach bestrahlt wird. 
+
+\subsubsection*{Absorption von Röntgenstrahlung}
+Beim Durchgang durch Materie findet eine Schwächung statt, es gilt das exponentielle Schwächungsgesetz
+\begin{equation}
+I_d = I_0 \cdot e^{-\kappa \cdot d} \text{ mit Schwächungskoeffizient } \kappa \propto Z^4 \cdot \lambda^3
+\end{equation}
+Daher eignet sich zur \textbf{Abschirmung} ein Material mit \textbf{hoher Kernladungszahl} wie zum Beispiel Blei. \\
+Das Absorptionsvermögen eines Elementes nimmt sprunghaft zu, wenn die Energie der durchdringenden Strahlung einen gewissen Wert erreicht hat, zur Absorption ist eine \textbf{Mindestenergie des Photons} notwendig. Je größer danach die kinetische Restenergie des abgetrennten Elektrons ist, desto unwahrscheinlicher wird die Absorption, es bildet sich eine \textbf{Absorptionskante}. 
+Es gibt zwei Arten, einerseits die \textbf{echt Absorption}, wo Photonenenergie auf das Material übertragen wird (meist Umwandlung in Wärme) und \textbf{Streuabsorption}, wo eine Richtungsänderung des Photons stattfindet (COMPTON-Wellenlängenänderung). 
+
+\subsubsection*{RÖNTGEN-Strukturanalyse}
+LAUE setzte Kristallgitter ein und konnte mit Hilfe von RÖNTGENstrahlen bzw. der BRAGGschen Beugung die Atomanordnung von Kristallgittern erforschen. \\
+Bei der \textbf{Drehkristallmethode} dreht man einen Kristall vor einer RÖNTGENstrahlung und misst die Maxima der Strahlung in Abhängigkeit des Einfallswinkels auf der anderen Seite, so kann auch die Gitterkonstante bestimmt werden. \\
+beim \textbf{LAUE-Verfahren} wird ein Kristall durchstrahlt, es kommt zur Beugung am dreidimensionalen Punktgitter. Die Beugungsbilder zeigen Symmetrie des Kristalls, sind aber schwer auswertbar. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Laser}
 \subsection{Funktionsweise}
@@ -922,7 +1170,12 @@ Dieser Effekt wird in der Elektronik bei der \textbf{Tunneldiode} ausgenutzt.
 
 \subsection{Elementarteilchen}
 
+\pagebreak
 
+\section{Fragenkatalog}
+\subsection{Theoriefragen}
+\pagebreak
+\subsection{Rechenfragen}
 
 
 
