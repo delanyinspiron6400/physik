@@ -578,6 +578,154 @@ Ziel ist die Abbildung von im Vergleich zur Brennweite meist sehr weit entfernte
 Hohlspiegel - Licht - Kondensatorlinse - Dia - Objektiv - Leinwand
 
 \subsubsection*{Spektrograph}
+Beim \textbf{Prismenspektrograph} ist das dispergierende Element ein Glasprisma. Beim \textbf{Gitterspektrograph} wird die Reflexion am Beugungsgitter statt des Prismas verwendet, es werden dabei erst Beugungen erster oder höherer Ordnung verwendet. 
+
+\subsubsection*{Abbildungsfehler}
+\begin{itemize}
+\item \textbf{Sphärische Abberation}: Parallele Strahlen werden nicht im Brennpunkt gebündelt
+\item \textbf{Astigmatismus}: Die Brennpunkte horizontaler und vertikaler Linien fallen nicht zusammen, beispielsweise bei Zylinderlinsen, sphärischen Linsen und nicht auf der optischen Achse liegenden Objektpunkten
+\item \textbf{Bildfeldkrümmung}: Bild liegt auf einer gekrümmten Fläche, nicht einer Ebene
+\item \textbf{Verzerrung}: Es kommt zu verzerrten Objektdarstellungen, Korrektur durch Mehrlinsensysteme
+\item \textbf{Chromatische Abberation}: Die Lichtfarben bündeln sich nicht im Brennpunkt eines Objektivs und führen zu Farbsäumen im Bild, Korrektur mittels Zerstreuungslinse. 
+\end{itemize}
+
+\subsection{Polarisation}
+
+Die Polarisierbarkeit des Lichtes ist nur erklärbar, wenn Licht als \textbf{transversale elektromagnetische Welle} aufgefasst werden kann.  So eine transversale Welle in Richtung z kann beschrieben werden durch
+\begin{equation}
+\vec{E} = \vec{E}_0 \cdot \text{cos}(k\cdot z - \omega \cdot t)
+\end{equation}
+$E_0$ kann dabei in zwei Komponenten zerlegt werden (x- und y-Achse), wenn eine der beiden Teilwellen eine Phasendifferenz gegenüber der anderen Teilwelle aufweist, wird sich die räumliche Lage von $\vec{E}_0$ ändern. 
+\subsubsection*{Linear polarisierte Welle}
+Ist die Phasendifferenz zwischen den Teilwellen ein \textbf{ganzzahliges Vielfaches von $\pi$}, so erhält man eine \textbf{linear polarisierte Welle}. 
+
+\subsubsection*{Zirkular polarisierte Welle}
+Ist die Phasendifferenz zwischen den Teilwellen ein \textbf{ganzzahliges Vielfaches von $\pi /2$} und sind die \textbf{Amplituden der Teilwellen gleich groß}, so erhält man eine \textbf{zirkular polarisierte Welle}. Rechtszirkular polarisiertes Licht bedeutet, dass die Spitze des Feldstärkenvektors in Ausbreitungsrichtung eine Rechtsschraube beschreibt. 
+
+\subsubsection*{Allgemeiner Fall: Elliptisch polarisierte Welle}
+Im Allgemeinen werden die Amplituden der Teilwellen verschieden groß sein und auch die Phasendifferenzen nicht in die vorherigen Kategorien fallen. Dies nennt man eine \textbf{elliptisch polarisierte Welle}. Im natürlichen Licht sind viele linear polarisierten Wellenzüge vorhanden, das Licht erscheint dadurch \textbf{unpolarisiert}. 
+
+\subsubsection{Polarisatoren}
+Diese erzeugen aus natürlichem Licht linear polarisiertes Licht.
+\begin{itemize}
+\item \textbf{Dichroismus}: Selektive Absorption von schwingenden Komponenten (z.B.: Drahtgitterpolarisator für Mikrowellen). Elektrischer Vektor parallel zu den Drähten $\Rightarrow$ wird zum Schwingen angeregt, \textbf{Welle stark absorbiert}. Elektrischer Vektor senkrecht zu Drähten $\Rightarrow$ keine Absorption. 
+\item \textbf{Doppelbrechung}: In manchen Kristallen sind die Lichtwege für unterschiedliche Schwingungsrichtungen anders - optisch \textbf{anisotrop}.
+\item \textbf{Reflexion}: Parallel zur Einfallsebene polarisiertes Licht wird transmittiert, normal zur Einfallsebene polarisiertes Licht wird reflektiert.
+\end{itemize}
+
+\subsubsection{Erzeugung von Phasenverschiebungen}
+Schneidet man doppelbrechende Kristalle parallel zur optischen Achse, nehmen ordentliche und außerordentliche Strahlen denselben geometrischen Weg, besitzen aber verschieden Ausbreitungsgeschwindigkeiten $ \Rightarrow$ Phasendifferenz. \\
+Mit einem Plättchen, das eine Phasendifferenz von $\Delta \varphi = k\cdot 2\pi + \pi/2$ erzeugt, wird eine Verschiebung der Wellenzüge um $\lambda/4$ erzeugt $\Rightarrow$ \textbf{zirkular polarisiertes Licht}. \\
+Mit einem Plättchen, das eine Phasendifferenz von $\Delta \varphi = k \cdot \pi$ erzeugt, kann mit $\lambda/2$ die Polarisationsrichtung der Welle gedreht werden. 
+
+\subsubsection{Optische Aktivität}
+Damit bezeichnet man die Drehung der Polarisationsebene einer fortschreitenden Welle bei Durchgang durch ein Medium, optisch aktive Moleküle können als schraubenförmige "Leiter" angesehen werden, es kommt zu einer Drehung der Polarisationsebene im Schraubensinn. 
+
+\subsubsection{Erzwungene optische Effekte}
+\begin{itemize}
+\item \textbf{Spaltdoppelbrechung}: Bei dieser wird in einem isotrpen Medium durch mechanische Spannung Doppelbrechung induziert und wird dadurch anisotrop, im Allgemeinen entsteht aus linear polarisierten Licht elliptisch polarisiertes Licht. 
+\item \textbf{FARADAY-Effekt}: Drehung der Polarisationsebene von Licht in ansonst isotoper Materie, wenn ein Magnetfeld in Richtung der Ausbreitungsrichtung angelegt wird. Allerdings kehrt sich der Drehsinn um, wenn das Licht in die andere Richtung läuft. Wird angewendet als \textbf{FARADAY-Isolator}, welcher in der Lasertechnik verhindert, dass reflektierte Laserstrahlung in den Laser eintritt und als \textbf{FARADAY-Modulator}, zur Modulation der Lichtintensität, beispielsweise bei der Signalübertragung. 
+\item \textbf{KERR-Effekt}: Durch ein elektrisches Feld wird ein optisch isotopes Medium doppelbrechend, die optische Achse ist gleich der Richtung des elektrischen Feldes. Gut geeignet sind Flüssigkeiten, deren Moleküle ein permanentes elektrisches Dipolmoment besitzen. Im elektrischen Feld werden Moleküle parallel ausgerichtet. Andwendung: Zum "Schalten" von Licht bis 10 GHz.
+\item \textbf{POCKELS-Effekt}: In bestimmten Kristallen wird durch ein elektrisches Feld Doppelbrechung induziert, die linear zur Feldstärke ist. Wie KERR, allerdings mit linearem Zusammenhang und bis 25 GHz. 
+\end{itemize}
+
+\subsection{Interferenz}
+Allgemein gilt das Superpositionsprinzip
+\begin{equation}
+\vec{E} = \vec{E}_1 + \vec{E}_2
+\end{equation}
+Die Intensität ergibt sich zu 
+\begin{equation}
+I = c \cdot \epsilon_0 \cdot \langle E^2 \rangle
+\end{equation}
+Bei Überlagerung kommt es zu Interferenzen, konstruktive Interferenz ist gegeben als
+\begin{equation}
+I_1 = I_2 \ \Rightarrow \ I_{ges} = 4 \cdot I_1
+\end{equation}
+Bei destruktiver Interferenz gilt $I_{ges} = 0$. 
+\subsubsection*{Kohärenzzeit und Kohärenzlänge}
+Kohärenz ist die Eigenschaft von Wellen bei Überlagerung Interferenzmuster zu zeigen. Wellenzüge haben nur eine endliche Länge, die mit der Abstrahlungszeit zusammenhängt, es gilt hierbei 
+\begin{equation}
+l = c \cdot \Delta t
+\end{equation}
+Die Zeit $\Delta t $, die eine Welle mit \textbf{unveränderter Phase} schwingt nennt man die \textbf{Kohärenzzeit}, die dazugehörige Länge $l_c = c \cdot \Delta t$ \textbf{Kohärenzlänge}. Dies ist messbar mit einem Interferometer, welches Licht aufteilt und auf zwei unterschiedlich langen Wegen leitet und danach interferieren lässt (Michelson-Interferometer). 
+Eine große Bandbreite der Frequenzen schränkt die Kohärenzlänge ein, die Kohärenzlänge von weißem Licht ist sehr klein ($\approx 2\mu m$), während monochromatisches Licht eine viel größere Kohärenzlänge ($\approx 10 cm$) und Laserlicht sogar bis zu 100 m. All das wird unter \textbf{zeitlicher Kohärenz} zusammengefasst.
+\\ Die \textbf{räumliche Kohärenz} befasst sich mit Phänomenen, die von der räumlichen Ausdehnung der Lichtquelle herrühren, zum Beispiel die kohärente Beleuchtung eines Doppelspaltes. 
+\subsubsection*{Interferometer mit Amplitudenaufspaltung}
+Es werden Teilwellen mittels eines Strahlenteilers aus einer Primärwelle erzeugt, diese Teilwellen werden wieder vereinigt an einem zweiten oder auch demselben Strahlenteiler, die Phasendifferenz ist dabei vom Weg abhängig. 
+\\
+Bei \textbf{weißem Licht} handelt es sich um eine Überlagerung von Teilwellen, um Interferenz beobachten zu können, muss die Phasendifferenz für alle Teilwellen in einem Punkt aufgehoben sein, es sind daher nur wenige Interferenzstreifen sichtbar. \\
+An \textbf{planparallelen Schichten} wird ein Strahl von der Oberfläche sowie an der Unterseite reflektiert, es treten parallele Strahlen aus, die durch eine Linse zur Interferenz gebracht werden können. Bei einem bestimmen Winkel tritt \textbf{konstruktive Interferenz} auf, dies nennt man auch \textbf{Interferenzen gleicher Neigung}. \\
+Bei \textbf{Interferenz gleicher Dicke} wird die Phasendifferenz durch die unterschiedliche Dicke der Schicht bestimmt. 
+
+\subsubsection*{Reflexionsmindernde Schichten}
+\textbf{Entspiegelung} durch eine $\lambda/4$-dicke Schicht, wo der 1. und 2. reflektierte Strahlt destruktiv interferieren, dabei muss allerdings die Amplitude der Teilwellen gleich groß sein. \\
+Bei \textbf{Mehrfachschichten} kann eine wirksamere Entspiegelung erreicht werden, die Entspiegelung vergrößert dabei die Intensität der transmittierten Welle.
+
+\subsubsection*{Zweistrahlinterferenz}
+Die auf das Interferometer einfallende Welle wird in \textbf{zwei Teilwellen} mit \textbf{annähernd gleicher Amplitude} aufgespalten. Beim MICHELSON-Interferometer bilden zwei Spiegel eine virtuelle planparallele Platte, es wird dabei ein Interferenzmuster in Form von Ringen erzeugt. Es wurde damit der Lichtäther falsifiziert und es kann genutzt werden zur Wellenlängenmessung, zur Längenmessung und zur FOURIER-Transformations-Spektroskopie.  \\
+Beim SAGNAC-Interferometer wird das Licht über 4 Wege im Kreis geführt, während der gesamte Versuchsaufbau rotiert. Es kann verwendet werden zur Messung von Winkelgeschwindigkeiten und als Lasergyroskop. 
+
+\subsubsection*{Vielstrahlinterferenz}
+Die einfallend Welle wird in viele Teilwellen mit abnehmender Amplitude aufgespalten. Beim FABRY-PEROT-Interferometer werden diese Strahlen mit einer Linse gebündelt und erzeugen ein \textbf{Ringsystem konzentrisch um die optische Achse}. Anwendung findet es in hochauflösenden Interferenzspektroskopen, als Laserresonator oder zur Frequenzselektion in der Laserphysik. 
+
+
+\subsection{Beugung}
+
+Eigentlich besteht kein prinzipieller Unterschied zwischen \textbf{Beugung} und \textbf{Interferenz}, man spricht von Interferenz, wenn sich im allgemeinen relativ wenige Wellen (2 bis einige 100) überlagern und von Beugung, wenn sich sehr viele Wellen (viele zehntausende) überlagern. \\
+Unter Beugung versteht man die Abweichungen von der geradlinigen Ausbreitung, wenn die freie Ausbreitung durch Hindernisse gestört wird. \\
+\textbf{FRAUENHOFERsche Beugung}: Beugungserscheinungenin unendlich großer Entfernung vom beugenden Objekt (\textbf{Fernfeld}). z.B.: werden bei einer Linse parallele Strahlen gesammelt und in die Brennebene transformiert. \\
+\textbf{FRESNELsche Beugung}: Erscheinung in der Nähe des beugenden Objekts (\textbf{Nahfeld}).
+
+\pagebreak
+
+\subsubsection{Beugung am Spalt}
+
+Jeder Punkt des Spalts ist eine Sekundärwelle, die miteinander interferieren. Bei $\theta = 0$ sind alle Sekundärwellen in Phase, es kommt zu konstruktiver Interferenz und man erhält das \textbf{zentrale Maximum}. \\
+Für das erste Beugungsminimum gilt $sin \ \theta_1 = \pm \frac{\lambda}{b}$. Der von der Mitte ausgehende Strahl und der Randstrahl interferieren destruktiv. 
+\begin{table}[h!]
+   \begin{center}
+     \begin{tabular}{| c | c |}
+     \hline
+     $\theta = 0$ & größte Intensität  \\ \hline 
+     $sin \ \theta = \frac{\lambda}{2b}$ & halbe Intensität \\ \hline
+     $sin \ \theta = \frac{\lambda}{b}$ & 1. Minimum \\ \hline
+     $sin \ \theta = \frac{3 \lambda}{2b}$ & 1. Nebenmaximum \\ \hline
+     $sin \ \theta = \frac{2 \lambda}{b}$ & 2. Minimum \\ \hline     
+     \end{tabular}
+   \end{center}
+   \caption{Spezialfälle}
+ \end{table} 
+ \\
+Man beobachtet also \textbf{Minima} (Auslöschung) für 
+\begin{equation}
+sin \ \theta = k \cdot \frac{\lambda}{b} \text{ mit } k = 1,2,3...
+\end{equation}
+Bei der \textbf{Beugung am Doppelspalt} gilt für die Maxima der Interferenz (mit a = Spaltabstand)
+\begin{equation}
+sin \ \theta = k \cdot \frac{\lambda}{a} \text{ mit } k = 1,2,3...
+\end{equation}
+Hierbei ist die Spaltbreite vernachlässigbar, wird sie dennoch berücksichtigt, wird die zuvor definierte Interferenzstruktur mit der Intensitätsverteilung der Beugung am Einzelspalt moduliert. \\
+Bei der \textbf{Gitterbeugung} interferieren sehr viele Teilwellen und es bilden sich deutliche Maxima.
+
+\subsubsection{Auflösungsvermögen optischer Systeme}
+
+Jeder Objektpunkt wird durch ein optisches Element endlicher Öffnung abgebildet. Jeder Bildpunkt hat also mindesten den Durchmesser des zugehörigen Beugungsscheibchens. Als noch unterscheidbar gelten zwei Beugungsscheibchen, wenn die den halben Durchmesser auseinander liegen. Die minimale Auflösung des abbildenden Systems ist 
+\begin{equation}
+\Delta \varphi_{min} = 1.22 \frac{\lambda}{D} \text{ mit D = 2R (Objektiv-Durchmesser)}
+\end{equation}
+
+\pagebreak
+
+\section{Quantennatur des Lichtes und der Materie}
+\subsection{Quantennatur des Lichtes}
+
+
+
+
+
+
+
 
 
 
