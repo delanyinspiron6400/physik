@@ -1261,15 +1261,80 @@ Bei der \textbf{Rekombination} kann die Energiedifferenz in Form von Photonen ($
 
 \section{Kern-Elementarteilchenphysik}
 \subsection{Grundsätzliches über Atomkerne}
-Ein Atomkern wird durch seine \textbf{Kernladungszahl}(=\textbf{Ordnungszahl}) Z (=\textbf{Anzahl der Protonen}) und seine \textbf{Massenzahl} MZ (=\textbf{Anzahl der Protonen und Neutronen}) charakterisiert. 
+Ein Atomkern wird durch seine \textbf{Kernladungszahl}(=\textbf{Ordnungszahl}) Z (=\textbf{Anzahl der Protonen}) und seine \textbf{Massenzahl} MZ (=\textbf{Anzahl der Protonen und Neutronen}) charakterisiert. Die Schreibweise lautet beispielsweise $_2He^4$. Die \textbf{Kernladungszahl} ist auch aus Streuexperimenten mit $\alpha$-Teilchen an Kernen bestimmbar. Die Massenzahl gibt die gerundete relative Masse an. 
+\begin{itemize}
+\item \textbf{Isotope}: Kerne gleicher Ordnungszahl, aber verschiedener Masse
+\item \textbf{Isobare}: Kerne gleicher Masse, aber verschiedener Ordnungszahl
+\item \textbf{Isomere}: Kerne in verschiedenen Anregungszuständen
+\end{itemize}
 
+\subsubsection*{Aufbau der Kerne}
+Kerne sind aus Protonen und Neutronen zusammengesetzt, Umwandlung von Neutronen in Protonen und umgekehrt ist möglich, daher wurde der Überbegriff \textbf{Nukleon} eingeführt. Der Zustand eines Nukleons wird spezifiziert durch die \textbf{Isospinquantenzahl $T_Z$}:
+\begin{itemize}
+\item $T_Z$ = 1/2  kennzeichnet Protonen
+\item $T_Z$ = -1/2   kennzeichnet Neutronen
+\end{itemize}
+
+\subsubsection*{Radius, Dichte und Form}
+Der Radius des Kerns wird definiert als entweder der Abfall der Dichte oder der Reichweite der Kernkräfte auf die Hälfte. Messbar ist dieser durch Messung der Winkelverteilung von gestreuten $\alpha$-Teilchen oder Abstoßung dieser unter Annahme reiner COULOMB-Abstoßung 
+\begin{equation}
+E_{kin} = E_{pot} = \frac{(Z-2)e\cdot2e}{4 \pi \epsilon_0 \cdot r_0} \ \Rightarrow \ r_0
+\end{equation}
+Die Dichte ist weitgehend für alle Kerne konstant mit $\approx 2 \cdot 10^{23}kg/m^3$ und die Form ist zunächst als \textbf{kugelförmig} anzunehmen, aber nur grob, eher in Form von Rotationsellipsoiden.
+
+\subsubsection*{Kerndrehimpuls}
+Der Kern besitzt einen \textbf{mechanischen Drehimpuls }, der durch die Angabe der \textbf{Kernspinquantenzahl I} festgelegt ist
+\begin{equation}
+|\vec{L_I}| = \sqrt{I(I+1)}\cdot \hbar
+\end{equation}
+
+Auch angeregte Zustände von Kernen sind möglich, Kerne mit gleicher Ladung und Masse, aber in verschiedenen Anregungszuständen (verschiedener innerer Energie) und daher mit verschiedener Stabilität nennt man \textbf{isomere Kerne}. 
+
+\subsubsection*{Magnetische Momente}
+
+Mit dem mechanischen Drehimpuls des Kerns ist auch ein \textbf{magnetisches Moment} verbunden, es Einheit definiert man das sogenannte \textbf{Kernmagneton}. Trotz \textbf{fehlender elektrischer Ladung} besitzt das Neutron ein \textbf{magnetisches Moment}. 
+
+\subsubsection*{Massendefekt und Kernbindungsenergie} 
+Erwartungsgemäß sollte ja gelten $M_K = M_P + M_N$, diese ist aber kleiner, die Differenzmasse bezeichnet man als Massendefekt. Daraus ergibt sich die Bindungsenergie über 
+\begin{equation}
+E = \Delta m \cdot c^2
+\end{equation}
+Helium-Kerne besitzen eine große Bindungsenergie (28eV) und sind daher sehr stabil, Deuterium-Kerne hingegen besitzen eine geringe Bindungsenergie und sind dadurch verhältnismäßig instabil. 
 
 
 \subsection{Kernmodelle}
+\subsubsection*{Tröpfchenmodell}
 
+Hierbei ist die Dichte der Kerne etwa konstant, ebenso die Bindungsenergie pro Nukleon, daraus leitet sich eine Analogie zu einem Flüssigkeitstropfen ab. Weiters wird daraus auf die \textbf{geringe Reichweite der Kernkräfte} geschlossen. Wechselwirkung herrscht nur zwischen benachbarten Nukleonen. Die Bindungsenergie entspricht aber nicht dem Potentialminimum und ist unabhängig von der Kernmasse und beträgt im Mittel ca. \textbf{8MeV}.  
+
+\subsubsection*{Einzelnukleonen-Modell (Schalenmodell)}
+Es gibt \textbf{Wechselwirkungen} zwischen Nukleonen, die Eigenschaften sind
+\begin{itemize}
+\item Kerndrehimpuls $\vec{L_I}$
+\item magnetisches Kernmoment $\vec{\mu_I}$
+\item elektrische Quadrupolmomente Q
+\item empirische Auswahlregeln des $\beta$-Zerfalls
+\item "magische Zahlen" 
+\end{itemize}
+Magische Protonen- und Neutronenzahlen wie 2,8,14,20,...,50,82,126 haben große relative Häufigkeit, große Stabilität und viele Isotope. Kerne mit
+\begin{itemize}
+\item N = (magische Zahl - 1 ) besitzen großen Wirkungsquerschnitt für Neutroneneinfang
+\item N = magische Zahl haben besonders kleinen Wirkungsquerschnitt
+\item N = (magische Zahl + 1) darunter die einzigen bekannten Neutronenstrahler
+\end{itemize}
+Man stellt sich den Kern aus Schalen aufgebaut vor analog zur Elektronenhülle, wobei Quantenzahlen die Nukleoneneigenschaften kennzeichnen, pro Schale $2 \cdot n^2$ Plätze für Nukleonen und es gilt das PAULI-Prinzip, Kerne, die gerade Protonen- und Neutronenzahlen besitzen (gg-Kerne) sind wegen der gegenseitigen Spinabsättigung besonders stabil, weniger stabil sind dabei gu- und ug-Kerne. Am instabilsten sind dabei uu-Kerne. 
+Die Spin-Bahn-Kopplung ist bei Nukleonen viel ausgeprägter als bei den Hüllenelektronen, es kommt daher zu einer Energieaufspaltung. \textbf{Magische Zahlen} liegen vor, wenn der \textbf{Energieabstand} zum nächstmöglichen Zustand besonders \textbf{groß} ist. \\
+Zusammenfassend ist also eine \textbf{Erklärung der wesentlichsten Kerneigenschaften} durch \textbf{zwei völlig verschiedene, miteinander inkompatiblen Kernmodellen} möglich. 
 
 \subsection{Natürliche Radioaktivität}
-
+Es gibt \textbf{4 natürliche Zerfallsreihen}: Thorium, Neptunium, Uran-Radium und Uran-Actinium, es gibt dabei \textbf{3 verschiedene Zerfallsarten}
+\begin{itemize}
+\item \textbf{$\alpha$-Zerfall}: Vom Magnetfeld wenig abgelenkt, positive Helium Kerne, es ändert sich \\
+MZ $\Rightarrow$ MZ - 4 + $\alpha$ und Z $\Rightarrow$ Z-2
+\item \textbf{$\beta$-Zerfall}: stärkere magnetische Ablenkung und es besteht aus schnellen Elektronen bzw. $\beta$-Teilchen \\
+MZ bleibt gleich, Z $\Rightarrow$ Z+1
+\item \textbf{$\gamma$-Zerfall}: keine magnetische Ablenkung, besteht aus sehr kurzwelliger elektromagnetischer Strahlung, Strahlung vergleichbar mit RÖNTGENstrahlung, aber noch mehr Energie, es ändert sich weder die Massen- noch die Kernladungszahl, es handelt sich um Übergänge zwischen verschiedenen Energiezuständen des selben Kerns. 
+\end{itemize}
 
 \subsection{Nachweis- und Messmethoden für energiereiche Teilchen}
 
