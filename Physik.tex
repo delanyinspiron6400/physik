@@ -1174,15 +1174,68 @@ Diese bestehen aus zwei gegenüberliegenden, im einfachsten Fall planen, Spiegel
 \subsubsection*{Longitudinale Modenstruktur}
 Die Phasendifferenz zwischen zwei Strahlen ist von der Länge abhängig. Die maximale Verstärkung ergibt sich bei stehenden Wellen mit 
 \begin{equation}
-k \cdot \lambda = 2 \cdot n \cdot L \text{ mit L = Abstand der Spiegel, n Brechzahl des Mediums im Resonator}
+k \cdot \lambda = 2 \cdot n \cdot L \text{ mit L Abstand der Spiegel, n Brechzahl des Mediums im Resonator}
+\label{Resonanzbedingung}
 \end{equation}
+Immer dann, wenn der Resonator ein Transmissionsmaximum besitzt, kann sich im Inneren eine stehende Welle aufbauen. Der Resonator speichert in diesem Fall elektromagnetische Energie. 
+Diejenigen Schwingungszustände, für die die Resonanzbedingung (6.2 G \ref{Resonanzbedingung}) gilt, nennt man \textbf{longitudinale Moden}. 
+
+\subsubsection*{Transversale Modenstruktur}
+
+Man betrachtet dabei die Beugung an den Spiegeln, der Resonator wird als Abfolge von Blenden betrachtet. Die Feldverteilung ist dabei gleich wie bei transversalen elektromagnetischen Moden (GAUSSsche Intensitätsverteilung). 
+
+\pagebreak
+
 
 \subsection{Schwellwerbedingungen, Lasermoden}
 
+\subsubsection*{Schwellwertbedingung}
+Man betrachtet einen ein Medium durchlaufenden Lichtstrahl. Normalerweise gilt das BEERsche Absorptionsgesetz
+\begin{equation}
+I(z) = I(z = 0)\cdot e^{-\alpha \cdot z}
+\end{equation}
+Damit es zu einer Lasertätigkeit kommt, muss die \textbf{Verstärkung} größer sein als die \textbf{Absorptionsverluste}. Die Intensität im Resonator muss daher einen Mindestwert (Laserschwelle) übersteigen. 
+
+\subsubsection*{Lasermoden}
+Die Bedingungen für die Emission von Laserlicht lauten
+\begin{itemize}
+\item Vorliegen von \textbf{Besetzungsinversion}, dies wird vom Medium für einen bestimmten Wellenbereich erfüllt (\textbf{Verstärkungsprofil} des aktiven Mediums)
+\item \textbf{Verstärkung} ist nur für \textbf{Eigenfrequenzen des Resonators} möglich, also in den Frequenzbereichen der \textbf{longitudinalen Resonatormoden}
+\item Das \textbf{Verstärkungsprofil} des aktiven Mediums muss \textbf{über der Laserschwelle} liegen 
+\end{itemize}
+
+\subsubsection*{Laser-Ausgangsleistung}
+Betrachtet wird ein Vierniveau-System, die Energiepumpe hebt die Atome des Lasermediums in den maximalen zustand, von dort fallen sie (strahlungslos) zurück in den oberen Zustand des Laserübergangs. Von dort aus ist die induzierte und spontane Emission zum unteren Zustand möglich, ein Teil der Besetzungsdichte kann aber auch verloren gehen, diese Verluste werden durch die \textbf{Relaxionsrate} erfasst. Abschließend fallen sie wieder auf das Grundniveau zurück. 
+
+
 \subsection{Lasertypen}
+\subsubsection*{Helium-Neon-Laser}
+Der Helium-Neon-Laser ist der am häufigsten eingesetzte Laser im sichtbaren Spektralbereich, das aktive Medium ist eine Niederdruck-Gasentladung, die in einer Mischung aus Helium und Neon betrieben wird. Die oberen Laserlinien-Niveaus werden durch Stöße mit metastabilen Helium-Atomen selektiv besetzt, wodurch im Neon-Atom zwischen Niveaugruppen 3s bzw. 2s und tieferen Niveaugruppen 3p/2p eine \textbf{Besetzungsinversion} entsteht. \\
+Die \textbf{Helium-Niveaus} werden in der Gasentladung durch Elektronenstoß besetzt. Die selektive Energieübertragung erfolgt deshalb, weil die Anregungsenergien der genannten Neon-Niveau-Gruppen mit der Anregungsenergie der metastabilen Helium-Niveaus übereinstimmt. \\
+Es kommt zu Emission von monochromatischen Licht einer Neon-Spektrallinie, aber mit Moden-Struktur(als eng benachbarte Frequenzen) (\textbf{Multimode-Betrieb}), trotzdem gibt es eine gute Kohärenzlänge. Mit zusätzlichen optischen Objekten lässt sich auch \textbf{Single-Mode-Betrieb} erreichen. 
+
+\subsubsection*{Argon-Ionen-Laser}
+Hoch angeregte Elektronen von ein-/zweifach geladenen Argon-Ionen werden durch Elektronenstoß stärker besetzt als darunterliegende Zustände. Vorteil ist die Möglichkeit der Erzeugung von \textbf{Dauerstrich-Laserlicht hoher Ausgangsleistung}, aber der Wirkungsgrad ist relativ gering. 
+
+\subsubsection*{$CO_2$-Laser}
+Ist einer der wichtigsten Lasertypen zur Materialbearbeitung, es sind \textbf{Dauerstrich-Leistungen von bis zu 100kW} möglich, ein weiterer Vorteil ist der relativ gute Wirkungsgrad. Die Anregung der $CO_2$-Moleküle erfolgt wieder in einer Gasentladung, die in einem Gemisch aus $CO_2$, $N_2$ und He brennt. Überbesetzung entsteht hauptsächlich durch Stöße aus $CO_2$ und $N_2$. Hier werden aber keine elektronischen Übergänge besetzt, sondern die Laserübergänge erfolgen zwischen Schwingungs-Rotations-Niveaus. 
 
 
+\subsubsection*{Titan-Saphir-Laser (Pulsbetrieb)}
 
+Es ist möglich, Laserpulse mit sehr kurzer Dauer (ca. 1fs) auszusenden. Für Untersuchungen von \textbf{Dynamik schnel ablaufender Vorgänge} eignet sich dieser Laserart also besonders. 
+
+\subsubsection{Halbleiterlaser}
+Laserdioden werden mittles Halbleitertechnologie erzeugt, die wichtigsten Eigenschaften sind
+\begin{itemize}
+\item Massenproduktion möglich
+\item Kleine Abmessungen und damit leichte Integrierbarkeit möglich
+\item Direkte Anregung mit kleinen Spannungen und Strömen
+\item Hoher Wirkungsgrad
+\item Direkte Modulationsmöglichkeit der emittierten Intensität\\ Anwendung zur \textbf{Datenübertragung}, Modulation bis 10 GHz
+\end{itemize}
+Die Elektronen halten sich in Energiebändern auf, bei p-Halbleitern ist das untere Band (\textbf{Valenzband}) mit positiven Löchern dotiert, bei n-Halbleitern dagegen das \textbf{Leitungsband} mit beweglichen Elektronen. Zwischen den Bändern besteht ein verbotener Bereich. Bringt man p- und n-Halbleiter in Kontakt, so diffundieren Elektronen so lange ins p-Gebiet, bis die FERMI-Kanten zusammenfallen und eine Raumladung und damit eine \textbf{Potentialdifferenz} entsteht. 
+Bei der \textbf{Rekombination} kann die Energiedifferenz in Form von Photonen ($E = h \cdot \nu$) abgegeben werden. Bei Spannung in Durchlassrichtung entsteht eine Zone mit \textbf{Besetzungsinversion}, dadurch wird eine Lasertätigkeit möglich. Dazu muss aber ein gewisser Schwellstrom überschritten werden, bei kleinen Strömen gibt es viele Lasermoden, bei zunehmenden Strom setzt sich ein einzelner Lasermode durch. 
 
 
 
@@ -1207,8 +1260,10 @@ k \cdot \lambda = 2 \cdot n \cdot L \text{ mit L = Abstand der Spiegel, n Brechz
 \pagebreak
 
 \section{Kern-Elementarteilchenphysik}
-
 \subsection{Grundsätzliches über Atomkerne}
+Ein Atomkern wird durch seine \textbf{Kernladungszahl}(=\textbf{Ordnungszahl}) Z (=\textbf{Anzahl der Protonen}) und seine \textbf{Massenzahl} MZ (=\textbf{Anzahl der Protonen und Neutronen}) charakterisiert. 
+
+
 
 \subsection{Kernmodelle}
 
