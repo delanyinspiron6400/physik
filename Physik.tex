@@ -12,7 +12,7 @@
 \title{Physik TE \\
 Ausarbeitung und Zusammenfassung}
 \author{Martin Winter}
-\date{09.09.2014}
+\date{08.09.2014 - 14.09.2014}
 
 \begin{document}
   \maketitle
@@ -1336,21 +1336,211 @@ MZ bleibt gleich, Z $\Rightarrow$ Z+1
 \item \textbf{$\gamma$-Zerfall}: keine magnetische Ablenkung, besteht aus sehr kurzwelliger elektromagnetischer Strahlung, Strahlung vergleichbar mit RÖNTGENstrahlung, aber noch mehr Energie, es ändert sich weder die Massen- noch die Kernladungszahl, es handelt sich um Übergänge zwischen verschiedenen Energiezuständen des selben Kerns. 
 \end{itemize}
 
+\subsubsection*{Zerfallsreaktion und Zerfallsgesetze}
+
+Beim Zerfall entsteht ein Kern K' mit geringerer Z/MZ + emittiertes Teilchen x + Energie $\Delta E$, diese $\Delta E$ verteilt sich auf K' und x und möglicherweise $\gamma$-Quanten. \\
+Der radioaktive Zerfall ist ein \textbf{statistischer Vorgang}, wie bei den optischen Niveaus der Atome kann daher nur eine \textbf{mittlere Lebensdauer eines Kerns} angegeben werden. Die \textbf{Halbwertszeit} ergibt sich zu
+\begin{equation}
+\tau_H = \frac{ln(2)}{\lambda}
+\end{equation}
+Nach verstreichen dieser Zeit ist also die Hälfte der vorhanden Kerne zerfallen, die Zerfallskurve folgt also einer e-Potenz. \\
+die Anzahl der Zerfälle pro Zeiteinheit bezeichnet man als \textbf{Aktivität} A
+\begin{equation}
+A(t) = A_0 \cdot e^{-\lambda \cdot t}
+\end{equation}
+Als Einheit wird \textbf{Bequerel}(Bq) verwendet
+\begin{equation}
+1 \text{Bequerel (Bq)} = 1\frac{\text{Zerfall}}{\text{Sekunde}}
+\end{equation}
+
+\pagebreak
+
+\subsubsection*{$\alpha$-Zerfall}
+Von natürlichen radioaktiven Strahlern emittierte $\alpha$-Teilchen besitzen eine Energie zwischen 4 und 9 MeV. In Luft haben diese eine \textbf{Reichweite} von einigen Zentimetern, das beobachtete Energiespektrum ist diskret, der Kern kann aus seinem Grundzustand oder einem angeregten Zustand strahlen. \\
+Ein vom Kern emittiertes $\alpha$-Teilchen müsste klassisch eine Energie besitzen, die höher als die Potentialbarriere ist, mit gewisser Wahrscheinlichkeit ist aber auch ein "durchtunneln" möglich. Dort gelangt das Teilchen dann in das abstoßende COULOMB-Feld der Kerns, wo es beschleunigt wird. Bei höherer Energie des $\alpha$-Teilchens existiert eine höhere Tunnelwahrscheinlichkeit, die Zerfallskonstante $\lambda$ ist größer, ebenso die kinetische Energie des Teilchens. \\
+Die kinetische Energie infolge der COULOMB-Abstoßung lautet, woraus sich Rückschlüsse auf $r_0$ ziehen lassen
+\begin{equation}
+E_{kin} = E_{pot} = \frac{2 \cdot (Z-2)\cdot e^2}{4\pi \cdot \epsilon_0 \cdot r_0}
+\end{equation}
+
+
+\subsubsection*{$\beta$-Zerfall}
+Obwohl Ausgangs- und Endkern definierte Energie besitzen, zeigt das \textbf{Energiespektrum} von $\beta$-Teilchen einen \textbf{kontinuierlichen Verlauf}, dies steht im Widerspruch zum Energieerhaltungssatz, die Zerfallsenergie sollte einen diskreten Wert besitzen. \\
+Daraus schließt man, dass außer dem $\beta$-Teilchen noch ein \textbf{Neutrino} emittiert wird. Das Neutrino ist notwendig zur \textbf{Erfüllung von Erhaltungssätzen}:
+\begin{itemize}
+\item \textbf{Energieerhaltung}
+\item \textbf{Impulserhaltung}: Das Neutrino kann aus dem Rückstoß der zerfallenen Kerne erahnt werden
+\item \textbf{Spinerhaltung}: Kerne mit halbzahligem Spin besitzen nach einer $\beta$-Umwandlung wieder halbzahligen Spin
+\end{itemize}
+Nach der Entdeckung des Neutrons konnte man diese Emission über den Zerfall des Neutrons anders deuten
+\begin{equation}
+n \Rightarrow p + e^- + \overline{\nu_e}
+\end{equation}
+wobei $\overline{\nu_e}$ als \textbf{Antineutrino} bezeichnet wird. \\
+Die Umkehrreaktion ist (mit $\nu_e$ Neutrino), ist eine endotherme Reaktion, läuft also nicht freiwillig ab
+\begin{equation}
+p \Rightarrow n + e^+ + \nu_e
+\end{equation}
+
+\subsubsection*{$\gamma$-Strahlung}
+Die $\gamma$-Strahlung wird gedeutet als \textbf{Emission elektromagnetischer Strahlung} beim Übergang zwischen verschiedenen Energiezuständen eines Kerns. 
+Ein anderer Kern kann ein $\gamma$-Quant absorbieren, wenn dieses die innere Energie $E_2-E_1$ an den Kern überträgt, das $\gamma$-Quant muss aber höhere Energie besitzen $h \cdot \nu' = E_2 - E_1 + E_{Rest}$, daher stimmen die Emissions- und Absorptionsfrequenz derselben $\gamma$-Linie nicht überein, es ist also keine Selbstabsorption emittierter $\gamma$-Quanten möglich. 
+
+
 \subsection{Nachweis- und Messmethoden für energiereiche Teilchen}
+\subsubsection*{Örtliche Nachweismethoden}
+\textbf{Ionisationskammern}: Ein energiereiches Teilchen erzeugt auf seinem Weg durch Materie Ionen, der durch Ionisierung verursachte Anstieg der Leitfähigkeit führt zu Stromerhöhung bei anliegender Spannung. Es wird also die Ionisierung der Luft durch energiereiche Teilchen gemessen (keine $\gamma$-Strahlen werden detektiert). \\
+\textbf{Zählrohr}: Hierbei handelt es sich um eine Art Zylinderkondensator, auf einem feinen Draht liegt Hochspannung an, dadurch herrscht auch eine hohe Feldstärke. Ein durch Radioaktivität erzeugtes Ion kann unter Umständen eine "Ionenlawine" auslösen, dann sind einzelne Teilchen zählbar! Es gilt für a = Zylinderdurchmesser und b = Drahtdurchmesser
+\begin{equation}
+E(r) = \frac{U}{r \cdot ln(b/a)}
+\end{equation}
+Man kann durch variieren der Spannung U verschiedene Bereiche unterscheiden, für kleine Spannungen arbeitet das Rohr als Ionisationskammer, danach als Proportionalzählrohr, im Betrieb als GEIGER-Zähler ist bei erzeugten Stromimpulsen die Teilchen-Art unbestimmbar und es hat eine sehr hohe Verstärkung. 
+Wenn das ionisierende Teilchen eine Ionenlawine loslöst, muss diese Gasentladung durch einen hohen Arbeitswiderstand oder andere Gase wieder "gelöscht" werden. \\
+\textbf{Kristallzähler} funktionieren wie Photohalbleiter, die Leitfähigkeit steigt bei Strahlung. 
+
+
+\subsubsection*{Sichtbarmachen von Bahnkurven}
+\begin{itemize}
+\item \textbf{Nebelkammer}: In der Nebelkammer befindet sich übersättigter Dampf, durchläuft diesen ein ionisiertes Teilchen so entsteht eine Nebelspur bei entsprechender Beleuchtung. Die Energie kann durch eine vorherige Ablenkung im Magnetfeld bestimmt werden. 
+\item \textbf{Blasenkammer}: Entstehung von Dampfbläschen in überhitzten Flüssigkeiten, der Vorteil ist, dass die Teilchenspuren sehr kurz gegenüber Luft sind, es ist also die Untersuchung von sehr energiereichen Teilchen möglich.
+\item \textbf{Funkenkammer}: Hierbei handelt es sich um einen verschachtelten Kondensator nahe der Durchbruchspannung, bei ionisierten Teilchen zünden die Überschläge. 
+\item \textbf{Drahtkammer}: In einem Gehäuse sind dich Drähte gespannt mit Spannung zwischen diesen, ein eintretendes Ion hinterlässt eine Spur von Ladungsträgerpaaren, der dadurch entstehende Impuls bzw. dessen Laufzeiten werden mit Computern als Bahnen der Teilchen sichtbar gemacht. 
+\item \textbf{Kernspurplatten}: Spezialphotoplatten zeigen nach Entwicklung Bahnspuren von Elementarteilchen
+\end{itemize}
+
+\pagebreak
+
+\subsubsection*{Integrierende Methode}
+Oft sind zeitlich integrierende Strahlungsmessungen erwünscht (zum Beispiel zur Feststellung von Strahlenbelastungen von Menschen). Solche Geräte werden \textbf{Dosimeter} genannt, unterschiedliche Prinzipien werden hier angewandt. 
+
+\subsubsection*{Bestimmung von Ladung, Ruhemasse und Energie}
+Über die Reichweite in Gas kann auf die Energie geschlossen werden. Der Bahnradius kann in einem Magnetfeld bestimmt werden, wenn die spezifische Ladung bekannt ist und die Teilchenenergie ist bestimmbar aus der Kernspur nach Vielfachstreuung in Kernspurplatten. 
+
+\subsubsection*{Wechselwirkung radioaktiver Strahlung mit Materie}
+\begin{itemize}
+\item \textbf{$\alpha$-Teilchen}: Die Maximalenergie ist 8.6 MeV, beim Durchgang durch Materie erleiden sie ihren hauptsächlichen Energieverlust durch Ionisierung, die Reichweite an der Luft sind einige Zentimeter in Gewebe einige Mikrometer. 
+\item \textbf{$\beta$-Teilchen}: Die Maximalenergie ist bis zu 16 MeV, sie haben eine hohe Geschwindigkeit und wechselwirken auf drei Arten mit Materie
+\begin{itemize}
+\item \textbf{Elastische Streuung an Kernen und Hüllen}: Vorallem langsame $\beta$-Teilchen
+\item \textbf{Ionisation}: Bewirkt Energieverluste im Bereich von 10 keV bis 2 MeV
+\item \textbf{Strahlung}: Beim Abbremsen der $\beta$-Teilchen entsteht RÖNTGENstrahlung
+\end{itemize}
+Insgesamt gibt es eine exponentielle Schwächung
+\item \textbf{$\gamma$-Strahlen}: Es handelt sich um Photonen sehr hoher Energie, auch hier gibt es ein exponentielles Schwächungsgesetz und Absorptions- und Streumechanismen wie bei RÖNTGENstrahlung. 
+\end{itemize}
+
+
 
 \subsection{Neutronen}
+\subsubsection*{Neutronenquellen}
+
+Entdeckt wurde das Neutron durch Mischung von Radiumchlorid als Lieferant von $\alpha$-Teilchen und Be-Pulver, bei der Kernreaktion werden ein Neutron n und ein $\gamma$-Quant emittiert. 
+\begin{itemize}
+\item \textbf{Kernreaktion mit Neutronenabgabe}
+\item \textbf{Fusionsneutronenquellen}: Beschuss von Li, Be, C... mit künstlich beschleunigten Stoßteilchen
+\item \textbf{Kernreaktoren}: Die hauptsächliche Quelle für langsame Neutronen. 
+\item \textbf{Photoneutronenquellen}: Bestrahlung von D oder Be mit $\gamma$-Quanten aus natürlich strahlenden Radionukliden, liefert monochromatische Neutronen.
+\item \textbf{Zerschlagen von Deuterium}: D wird in einem Zyklotron beschleunigt und auf Auffängerscheibe gebremst, D-Kern dissoziiert unter Aufwand der Bindungsenergie und es entsteht dabei ein scharf gebündelter Neutronenstrahl. 
+\end{itemize}
+
+\subsubsection*{Thermische und monochromatische Neutronen}
+Neutronen sind \textbf{elektrisch neutral} und müssen daher bei der Annäherung an einen anderen Kern keine COULOMB-Barriere überwinden, sie haben bei geringer Teilchengeschwindigkeit eine große Verweildauer in der Nähe anderer Kerne, können sich an dies anlagern und danach Kernreaktionen auslösen. \\
+Von \textbf{thermischen Neutronen} spricht man, wenn ihre Geschwindigkeitsverteilung der Umgebungstemperatur entspricht. 
+\subsubsection*{Erzeugung monochromatischer Neutronen (Neutronen gleicher kinetischer Energie}
+Ein Strahl von Neutronen mit definierter Geschwindigkeit entspricht einer Materiewelle mit einer bestimmten DE BROGLIE-Wellenlänge, eine derartige Welle kann an einem geeigneten Beugungsgitter Interferenzerscheinungen zeigen. 
+
+\subsubsection*{Neutronenausgelöste Kernreaktionen}
+Wenn \textbf{schnelle Neutronen} einen Kern treffen, haben sie etwa die gleiche Wirkung wie schnelle Protonen, sie lösen die Emission von n,p,$\gamma$, usw. aus. \\
+\textbf{Langsame Neutronen} können wegen der fehlenden Potentialschwelle leicht in schwere Kerne eindringen, dabei wird die Bindungsenergie frei und es bildet sich ein Zwischenkern, der wieder zerfällt. In Spezialfällen erfolgt der Zerfall des angeregten Kerns in große Bruchstücke - \textbf{Kernspaltung}.  
+
+\subsubsection*{Nachweis von Neutronen}
+\subsubsection*{Rückstoßkerne} Neutronen werden beim Durchgang durch Materie an den Atomkernen des Materials gestreut. Die streuenden Kerne erleiden beim Stoß mit schnelle Neutronen einen Rückstoß, der an Nebelspuren erkennbar ist. Besonders groß ist die Energieübertragung auf leichte Kerne (Protonen), was zur Detektion von Neutronen in Ionisationskammern und Szintillationszählern ausgenutzt werden kann: Bei Bremsung von Neutronen in organischem Material (z.B.: Paraffin) werden Protonen freigesetzt, die ionisieren können. 
+\subsubsection*{Kernreaktionen}
+Ein sehr wirksamer Nachweis erfolgt bei der Bor-Reaktion, das $\alpha$-Teilchen ist über seine ionisierende Wirkung nachweisbar, zur Neutronendetektion verwendet man $BF_3$ als Füllgas. Da die Reaktion bevorzugt mit langsamen Neutronen erfolgt, müssen schnelle Neutronen vor dem Zählrohr mit Paraffin abgebremst werden. 
+
 
 \subsection{Erzwungene Kernumwandlung und künstliche Radioaktivität}
+Im Gegensatz zur natürlichen Radioaktivität erfolgt hier die Umwandlung von Kernen mit künstlich erzeugten bzw. beschleunigten Geschossen, die auf umzuwandelnde Kerne treffen und dort aufgrund das Einschießens bzw. des Anlagerns einen Zerfall herbeiführen. Derartige Geschosse können p,n,$\alpha$, d,t,e,Kerne,... sein, auch Anlagerung von Neutronen an stabile Kerne löst eine Reaktion aus. \\
+
+\begin{center}
+\textit{\textbf{Ladung und Masse} (abgesehen vom Massendefekt) müssen in den Reaktionsgleichungen \textbf{erhalten bleiben}}.
+\end{center}
+
+Bei leichten Atomen bzw. schweren Atomen stimmen die Massen der Atome vor der Reaktion mit den Massen danach nicht überein, die überschüssige Bindungsenergie wird frei. 
+\subsubsection*{$\beta^+$-Zerfall, Positron}
+Entstehen bei der künstlichen Kernumwandlung Kerne mit zu großem Protonenüberschuss, wird ein sogenannter $\beta^+$-Zerfall beobachtet, es wird dabei ein Teilchen emittiert, das gleiche Ruhemasse, aber entgegengesetzte Ladung wie ein Elektron besitzt und als \textbf{Positron} bezeichnet wird. Dabei ändert sich die Massenzahl nicht, aber die Kernladungszahl verringert sich um 1. Das Positron kann in Gegenwart von Materie nicht frei existieren, es vereinigt sich mit einem Elektron unter Emission zweier Photonen, dies wird als Paarvernichtung bezeichnet. 
+$\beta^+$-aktive Kerne besitzen zu großen Protonenüberschuss, daher erfolgt eine Umwandlung von p zu n
+\begin{equation}
+p + \approx 1 MeV \Rightarrow n + \beta^+ + \nu_e
+\end{equation}
+
+Zur \textbf{Erfüllung von Energie- und Impulssatz} muss wieder ein drittes Teilchen, das Neutrino $\nu_e$ eingeführt werden. 
+
+\subsubsection*{Bahnelektroneneinfang (K-Einfang)}
+Eine Alternative den Protonenüberschuss abzubauen ist der Einfang von Hüllenelektronen, dadurch entsteht Röntgenemission, da innere Elektronen aufgefüllt werden müssen und zusätzlich wird wieder ein Neutrino emittiert. 
+
 
 \subsection{Kernspaltung}
+Es erfolgt eine Anlagerung von Neutronen an Kerne, was zu einer Spaltung inklusive direkter Neutronen-Emission und $\beta^-$-Umwandlung der Folgekerne führen kann. Emittierte Neutronen lagern sich selbst wieder an Kerne an, was insgesamt dann zu einer \textbf{Kettenreaktion} führen kann. Damit diese Kettenreaktion funktionieren kann, muss die Uranabmessung rößer als die freie Weglänge der Neutronen sein, die dazu notwendige Mindestmasse bezeichnet man als \textbf{kritische Masse}. \pagebreak \\
+\textbf{A-Bombe}: Es gibt die Uranbombe und die Plutoniumbombe, Zusammenbringen zweier unkritischer Massen zu einer überkritischen Masse, das Ziel ist dabei, die Aufrechterhaltung der Kettenreaktion für lange Zeit. \\
+\textbf{Kernreaktor}: Langsamer, kontrollierter Spaltprozess mit konstanter, abgegebener Leistung, die Spaltungsenergie bzw. kinetische Energie der Spaltprodukte wird als Wärme zum Betreiben von Dampfturbinen verwendet. 
+Energie wird aus den Brennelementen geliefert, welche von Moderatoren umgeben sind, welche schnelle Neutronen einfangen. Die Regelstäbe können Neutronen absorbieren und werden je nach Reaktionsfortschritt mehr oder weniger in den Reaktionsbereich eingeführt. 
 
 \subsection{Thermische Kettenreaktion, Kernfusion}
+Eine Fusion führt aufgrund der Bindungsenergien zu einem Energiegewinn, damit aber Kerne verschmelzen können, müssen sie sich entgegen der COULOMB-Abstoßung auf sehr kleine Distanzen nähern. Es muss daher eine Initialenergie aufgebracht werden und es ist sehr viel Energie notwendig, damit die Teilchen genügen Bewegungsenergie haben. Es ist generell unwahrscheinlich, dies zu realisieren, aber in Sternen auf Grund des enormen Volumens möglich. 
+
+\subsubsection*{Kernfusionsreaktor}
+Im Gegensatz zu Kernspaltungsreaktoren, für die nur begrenzt Brennmaterial zur Verfügung steht, wären für einen Reaktor, der H zu He verschmilzt, keine derartigen Probleme zu erwarten und es gäbe keine radioaktiven Abfälle. Am leichtesten ist dies mit Deuterium und Tritium Kernen möglich, Zündung erfolgt bei sehr hohen Temperaturen (ca $10^8$ und hohe Teilchendichte). Wegen hoher Temperaturen ist das Betriebsgas plasmaförmig und muss in Magnetfeldern gehalten werden. 
+
 
 \subsection{Höhenstrahlung}
+Aus dem Weltall kommt \textbf{durchdringende Strahlung} auf die Erde, die eine Ionisierung der Luft hervorruft, man unterscheidet zwischen
+\begin{itemize}
+\item \textbf{Primärteilchen}: Hauptbestandteil sind Protonen und teilweise $\alpha$-Teilchen, Elektronen fehlen aufgrund des abschirmenden Erdmagnetfelds.
+\item \textbf{Sekundärteilchen}: In den oberen Atmosphäreschichten kommt es zu einer Aufteilung der primären Teilchen in Sekundärteilchen durch Stoßprozesse, unterhalb von 20 km Höhe findet man diese Teilchen überwiegend als $e^-$ und $e^+$ vor. 
+\end{itemize}
+
 
 \subsection{Beschleunigermaschinen für Teilchen}
+Um bei der Untersuchtung von Stoßprozessen mit hochenergetischen Teilchen nicht allein auf die Höhenstrahlung angewiesen zu sein, versucht man künstliche Kerngeschosse hoher Energie herzustellen, indem man geladene Teilchen mit Hilfe elektrischer und magnetischer Felder beschleunigt. \\
+Die dafür benötigten hohen Spannungen kann man zum Beispiel mit dem VAN DE GRAPH-Generator erreichen (bis 10 MV), wo ein Band Ladungen auf einer Halbkugel sammelt.
+\subsubsection*{Einfachbeschleuniger}
+Die einfachste Möglichkeit eines Beschleunigers ist ein \textbf{Kanalstrahlrohr}, bei dem die Spannung einfach ausgenutzt wird, beim Tandem-Beschleuniger wird ein Teilchen durch Spannung beschleunigt, an einer Folie umgeladen und von der selben Spannung weiter beschleunigt. 
+\subsubsection*{Mehrfachbeschleuniger}
+Wiederholtes Ausnutzen einer relativ kleinen Spannung.
+\begin{itemize}
+\item \textbf{Linearbeschleuniger}: Seriell aufgebaute Scheiben bzw. röhrenförmige Elektroden, die beschleunigen. Mit zunehmender Strecke müssen die Elektroden länger werden, da die Geschwindigkeit ansteigt. Bei hohen Geschwindigkeiten generell benötigt man aber sehr große Gesamtlänge des Beschleunigers. 
+\item \textbf{Zirkularbeschleuniger}: Hier wird ein Teilchen mehrfach auf der selben Bahn beschleunigt, im \textbf{Zyklotron} wird ein Ion zwischen zwei Halbdosen in einem wechselnden elektrischen Feld beschleunigt, durch das axiale Magnetfeld wird das Teilchen auf der Bahn gehalten und mit steigendem Bahnradius steigt auch die Geschwindigkeit. 
+\item \textbf{Synchrozyklotron}: Hier wird das relativistische Teilchen trotz Massenzuname durch Frequenzmodulation des beschleunigenden Feldes im Takt gehalten.
+\item \textbf{Betatron}: Hier gibt es Beschleunigung im Transformationsprinzip, ein veränderlicher magnetischer Fluss erzeugt ein kreisförmiges, elektrisches Wirbelfeld, das Energie auf kreisförmig umlaufende Elektronen überträgt. Hier sind Energien bis zu 300MeV möglich und auch $\gamma$-Strahlung. 
+\item \textbf{Synchrotron}: Hier werden Teilchen in einem Führungsfeld auf konstantem Radius gehalten, Stärke des Feldes steigt mit Massenzunahme. Die Beschleunigung erfolgt zwischen Magnetstrecken mit Hochfrequenz-Resonatoren. 
+\end{itemize}
+
 
 \subsection{Elementarteilchen}
+Es gibt 4 Arten von Wechselwirkungen zwischen Materie
+\begin{itemize}
+\item \textbf{Starke Wechselwirkung}: zwischen Nukleonen...
+\item \textbf{Elektromagnetische Wechselwirkung}: zwischen geladenen Kernteilchen
+\item \textbf{Schwache Wechselwirkung}: zwischen Leptonen und Baryonen
+\item \textbf{Gravitations-Wechselwirkung}: Graviton
+\end{itemize}
+Es gelten die Erhaltungssätze für Energie, Impuls, Drehimpuls, Ladung, Parität, Leptonenquantenzahl, Baryonenquantenzahl, Isospin und Seltsamkeit. 
+\subsubsection*{Austausch-Wechselwirkung}
+Es gibt Äquivalenz zwischen der Darstellung eines Teilchens im Teilchenbild und im Wellenbild, ebenso gibt es eine äquivalente Darstellung zur Kraftwirkung eines Feldes und Vermittlung von Kräften durch Austausch von Quanten. Alle Kraftwirkungen sind auf Austausch eines Bindeteilchens rückführbar. 
+
+\subsubsection*{Elementare Elementarteilchen}
+\begin{itemize}
+\item \textbf{Leptonen}: Elektron, Müon, Tanon, Neutrinos
+\item \textbf{Quarks}: 18 Arten, Mesonen, Baryonen
+\item \textbf{Wechselwirkungsteilchen}: Graviton, Photon, Gluon, Weakon
+\end{itemize}
+
+\subsubsection*{Zusammengesetze Elementarteilchen}
+Diese werden aus Quarks zusammengebaut, es gibt dabei \textbf{Mesonen} und \textbf{Baryonen}. 
+Mesonen sind Quark-Antiquark-Paare, sie werden beobachtet in der Höhenstrahlung und beim Beschuss von Kernen mit energiereichen Teilchen. \\
+Baryonen sind in zwei Untergruppen unterteilt, und zwar Nukleonen (Protonen und Neutronen) und Hyperonen (sind schwerer als Protonen bzw. Neutronen), diese sind entweder aus drei Quarks oder drei Antiquarks aufgebaut. 
+Die einzige vollständig stabile Konfiguration von Quarks ist das \textbf{Proton}. 
 
 
 
@@ -1368,12 +1558,13 @@ MZ bleibt gleich, Z $\Rightarrow$ Z+1
 
 
 
-\pagebreak
 
-\section{Fragenkatalog}
-\subsection{Theoriefragen}
-\pagebreak
-\subsection{Rechenfragen}
+%\pagebreak
+
+%\section{Fragenkatalog}
+%\subsection{Theoriefragen}
+%\pagebreak
+%\subsection{Rechenfragen}
 
 
 
