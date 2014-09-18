@@ -930,7 +930,7 @@ $m_\ell$ muss eine \textbf{ganze Zahl} sein, daraus kann man die Existenz ganzer
 Im Radiusteil der Gleichung ist die \textbf{Gesamtenergie} $E = E_{kin} + U$ enthalten. 
 \begin{itemize}
 \item $E  >  0$: Das Elektron ist nicht an den Kern gebunden und besitzt kinetische Energie
-\item $E  >  0$: Das Elektron ist an den Kern gebunden, die Gleichung ist aber nur für bestimmte Werte lösbar (Quantelung)
+\item $E  <  0$: Das Elektron ist an den Kern gebunden, die Gleichung ist aber nur für bestimmte Werte lösbar (Quantelung)
 \item $E  =  0$: Elektron unendlich weit vom Kern entfernt
 \end{itemize}
 Unter der Erfüllung der Bedingungen für sinnvole Lösungen ergeben sich die Energieeigenwerte zu
@@ -1559,13 +1559,125 @@ Die einzige vollständig stabile Konfiguration von Quarks ist das \textbf{Proton
 
 
 
-%\pagebreak
 
-%\section{Fragenkatalog}
-%\subsection{Theoriefragen}
-%\pagebreak
-%\subsection{Rechenfragen}
+\pagebreak
 
+\section*{Theoriefragen}
+
+\subsection*{Wie wird die Basisgröße Meter (m) im SI-System definiert?}
+
+Ein Meter ist die Strecke, die Licht im Vakuum während der
+Dauer 1/299792458s durchläuft.
+
+\subsection*{Wie wird die Basiseinheit Zeit (s) im SI-System definiert?}
+
+Eine Sekunde ist das $9192631770$-fache der Periodendauer der elektromagnetischen Strahlung des Übergangs zwischen den Hyperfeinstruktur-Niveaus des von äußeren Feldern ungestörten Cäsium-Isotops $^{133}Cs$.
+
+\subsection*{Wie wird die Basiseinheit Masse (kg) im SI-System definiert?}
+$1$ kg ist die Masse eines Platin-Iridium-Zylinders, der als Massennormal in Paris aufbewahrt wird.
+
+\subsection*{Wie nennt man die Größe $\omega$? Welche Einheit besitzt sie?}
+Diese Größe steht für die Winkelgeschwindigkeit und hat die Einheit rad/s.
+
+\subsection*{Wie lauten die Newton'sche Axiome?}
+\begin{enumerate}
+\item Jeder Körper verharrt im Zustand der Ruhe oder der gleichförmigen
+geradlinigen Bewegung, solange keine Kraft auf ihn wirkt.
+\item Eine zeitliche Änderung der ``Bewegungsgröße'' ist der
+bewegenden Kraft, durch die sie verursacht wird, proportional und
+verläuft in Richtung der Kraft.
+\item Bei zwei Körpern, die nur miteinander, aber nicht mit anderen
+Körpern wechselwirken, ist die Kraft $F_{1}$ auf den einen Körper
+entgegengesetzt gleich der Kraft $F_{2}$auf den anderen Körper. (Actio
+= Reactio)
+\end{enumerate}
+
+
+\subsection*{Wenn Sie einen Raum betreten, üben Sie eine Gewichtskraft
+auf den Fußboden auf. Wodurch entsteht die Reaktionskraft?}
+
+Dieses Phänomen lässt sich mit dem 3. NEWTONschen Axiom erklären, Actio = Reactio, man übt durch die eigene Gewichtskraft auf den Boden eine Kraft $F_1$ aus, wodurch die Deformationskraft des Fußbodens($F_2$) dieser Gewichtskraft entgegenwirkt. 
+
+\subsection*{Was versteht man unter potentieller Energie?}
+
+Die potentielle Energie (auch Lageenergie genannt) beschreibt die Energie eines physikalischen Systems, die durch seine aktuelle Konfiguration in sich (z.B.: gespannte Feder) oder seine Lage in einem Kraftfeld bestimmt wird. Die potentielle Energie in Abhängigkeit von den Ortskoordinaten wird als Potential bezeichnet. 
+
+
+\pagebreak
+
+\subsection*{Nach welchen Kriterien wählt man den Nullpunkt der potentiellen
+Energie (nennen Sie 2 gängige Möglichkeiten)?}
+
+\begin{itemize}
+\item Man wählt $E_{pot}=0$ für den Nullpunkt des Koordinatensystems.
+\item Man setzt bei Problemen, bei denen der Körper ins Unendliche
+gelangen kann $E_{pot}=\infty$.
+\end{itemize}
+
+\subsection*{Bleibt bei einem elastischen Stoß zweier Körper auf einer
+waagerechten Ebene die Summe der kinetischen Energien erhalten? Gilt
+dies auch für den unelastischen Stoß? Für welche Größe gilt auch beim
+unelastischen Stoß ein Erhaltungssatz?}
+
+Ja, die gesamte kinetische Energie der stoßenden Körper bleibt beim elastischen Stoß erhalten, es gelten daher beiderseits der Impulserhaltungssatz sowie der Energiesatz der Mechanik. Beim unelastischen Stoß bleibt die Summe der kinetischen Energie nicht erhalten, es kommt ein Summand Q dazu, der etwaige Verluste widerspiegelt. Daher gilt wohl der Impulssatz, jedoch nicht der Energiesatz der Mechanik. 
+
+
+\subsection*{Wann nennt man ein Kraftfeld konservativ?}
+Ein konservatives Kraftfeld ist wirbelfrei, somit ergibt das geschlossene Wegintegral Null und Arbeit bei Bewegung eines Massepunktes hängt nur von Anfangs- und Endpunkt ab, aber nicht vom Weg dazwischen. 
+
+\subsection*{Welcher Zusammenhang besteht zwischen Potential und Feldstärke?}
+Das elektrostatische Potential lässt sich berechnen durch 
+\begin{equation*}
+V(P) = \intop_{P1}^{\infty}{\vec{E}\cdot d\vec{s}}
+\end{equation*}
+Umgekehrt lässt sich die Feldstärke aus dem Potential berechnen
+\begin{equation*}
+\vec{E} = - grad \ V
+\end{equation*}
+
+\pagebreak
+\subsection*{Welcher Zusammenhang besteht zwischen Kraft - Feldstärke sowie Potential - potentielle Energie?}
+In einem konservativen Kraftfeld gilt dabei
+\begin{align*}
+\vec{F}_{el} &= q \cdot \vec{E}_{el} \\
+\vec{F}_{grav} &= m \cdot \vec{E}_{grav}
+\end{align*}
+Die potentielle Energie einer Probemasse (-ladung) in Abhängigkeit der Ortskoordinaten wird als Potential bezeichnet, es gilt dabei
+\begin{equation*}
+E_{pot}(\vec{r}) = m \cdot V_{pot}(\vec{r})
+\end{equation*}
+
+
+\subsection*{Erläutern Sie anhand der Bindungsenergie der Nukleonen in Abhängigkeit der Massenzahl, warum bei der Spaltung schwerer Atomkerne und der Fusion leichter Atomkerne Energie frei wird. Warum spalten sich die meisten schweren Atome nicht spontan? Welches Kernmodell wird hierbei zur Erklärung verwendet?}
+
+Die Masse eines Atomkerns (bestehend aus Nukleonen) ist stets kleiner als die Summe der Massen seiner Bausteine (Protonen und Neutronen). Diese Differenz wird als Massendefekt bezeichnet, der Rest ist Bindungsenergie zwischen den Kernteilchen (=Nukleonen) :
+\begin{equation*}
+E = \Delta m \cdot c^2
+\end{equation*}
+Die Bindungsenergie wird bei der Bildung eines Kerns frei, diese Energie pro Nukleon ist beim Eisen am größten und nimmt bei schwereren Kernen leicht ab, bei leichteren Kernen sogar stark ab. \\
+\textbf{Kernfusion}: Fusioniert man zwei leichte Kerne (z.B.: Deuterium und Tritium), so entsteht dabei Helium, ein schwerer Kern mit höherer Bindungsenergie und höherem Massendefekt. Die Differenz der Massendefekte wird als Energie frei. 
+\\
+\textbf{Kernspaltung}: Spaltet man einen schweren Kern, so entstehen mittelschwere Kerne mit einem höheren Massendefekt, also höherer Bindungsenergie. Die Differenz der Massendefekte wird als Energie frei, diese ist jedoch kleiner als bei der Fusion, durchschnittlich beträgt die Bindungsenergie 8 MeV. 
+\\
+Zu Erklärung dieser Phänomene wird das Tröpfchenmodell verwendet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+\section*{Rechenfragen}
 
 
 
