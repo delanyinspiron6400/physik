@@ -2243,7 +2243,6 @@ Ein Linsensystem besteht aus einer Zerstreuungslinse ($f=-10cm$) und einer Samme
 \begin{enumerate}
 \item In welcher Entfernung von der Sammellinse entsteht das Bild? Wie groß ist der Abbildungsmaßstab?
 \item Wie groß muss die Brennweite einer Ersatzlinse sein, und wo muss sie aufgestellt werden, damit das Bild am selben Ort und mit der selben Größe entsteht?
-\item Eine Sammellinse bildet einen Gegenstand 4-fach vergrößert reell ab, verschiebt man die Linse gegenüber dem Gegenstand um 1cm, so erhält man ein 5-fach vergrößertes, ebenfalls reelles Bild. Wie groß ist die Brennweite der Sammellinse?
 \end{enumerate}
 \end{framed}
 
@@ -2279,7 +2278,14 @@ Damit folgt daraus $g=22.92cm$ und $b=128.69-g=105.77cm$. Damit lässt sich die 
 \begin{align*}
 f = \frac{1}{\frac{1}{g}+\frac{1}{b}} = \frac{1}{\frac{1}{22.92} + \frac{1}{105.77}} = 18.84 cm
 \end{align*}
-\item Damit man eine größere Vergrößerung erhält, muss man die Linse zum Gegenstand bewegen. Dadurch kann man auf die beiden Abbildungsmaßstäbe schließen
+\end{enumerate}
+
+
+\begin{framed}
+ Eine Sammellinse bildet einen Gegenstand 4-fach vergrößert reell ab, verschiebt man die Linse gegenüber dem Gegenstand um 1cm, so erhält man ein 5-fach vergrößertes, ebenfalls reelles Bild. Wie groß ist die Brennweite der Sammellinse?
+\end{framed}
+
+Damit man eine größere Vergrößerung erhält, muss man die Linse zum Gegenstand bewegen. Dadurch kann man auf die beiden Abbildungsmaßstäbe schließen
 \begin{align*}
 M_T &=-\frac{b}{g} = -4 \\
 M_T &= -\frac{b+1}{g-1} = -5
@@ -2294,11 +2300,144 @@ Daraus wiederum lässt sich die Brennweite der Linse berechnen
 \begin{align*}
 \frac{1}{f} = \frac{1}{60} + \frac{1}{240} \Rightarrow f = 4.8cm
 \end{align*}
+
+\pagebreak
+
+
+\begin{framed}
+\begin{enumerate}
+\item An eine Röntgenröhre wird eine Spannung von $U = 50kV$ angelegt. Wie groß ist die Mindestwellenlänge $\lambda_{min}$ der emittierten Röntgenstrahlung? Warum tritt keine Strahlung mit $\lambda < \lambda_{min}$ auf? Skizze der spektralen Röntgen-Bremsstrahlung.
+\item Unter welchen Winkeln würde man Beugungsmaxima beobachten, wenn man als Wellenlänge das 2.5-fache der in 1.) berechneten Mindestwellenlänge annimmt (Kristallspektrometer mit $d = 1 \mathrm{\AA}$). Einige Winkel und Beugungsordnungen angeben.
+\item Wie groß muss die Kernladungszahl der Antikathode mindestens sein, damit bei $50kV$ noch keine charakteristische Röntgenstrahlung auftritt (Ionisierungsenergie des Wasserstoffatoms = 13.6eV)?
+\item Schätzen Sie ab, ob bei der benutzen Röntgenröhre bereits charakteristische Strahlung auftritt, wenn die Antikathode aus Wolfram gefertigt wurde (Ionisierungsenergie des Wasserstoffatoms 13.6eV, Kernladungszahl von Wolfram Z = 74).
+\item Berechnen Sie aus der Ionisierungsenergie des Wasserstoffatoms den Abstand des Elektrons vom Kern.
+\item Strahlung mit $\lambda_{min}$ trifft auf einen Kristall mit einem Gitterebenenabstand von $1 \mathrm{AA}$. Unter welchem Einfallswinkel wird BRAGGsche Reflexion beobachtet?
+\end{enumerate}
+\end{framed}
+\begin{enumerate}
+\item
+Genutzt wird hierbei die Formel $U \cdot e = h \cdot \nu$ und der Zusammenhang $\nu = \frac{c}{\lambda}$:
+ \begin{align*}
+U = 50kV \\
+U \cdot e = h \cdot \nu_{max} = \frac{h \cdot c}{\lambda_{min}}
+\end{align*}
+Nach Umformung erhält man dann
+\begin{align*}
+\lambda_{min} = \frac{h \cdot c}{U \cdot e} = \frac{6.62\cdot 10^{-34} Js \cdot 3 \cdot 10^8m/s}{50\cdot 10^3V \cdot 1.602 \cdot 10^{-19}C} = 2.48\cdot 10^{-11} m = 0.248 \mathring{A}
+\end{align*}
+(1 \AA ngström = $10^{-10}$m). \\
+Die Formel $U \cdot e = h \cdot \nu_{max}$ gilt \textbf{nur} dann, wenn die gesamte kinetische Energie des Elektrons in Strahlung umgewandelt wird. Da aber nur ein Teil dieser Energie umgewandelt wird, können nur kleinere Frequenzen = größere Wellenlängen vorkommen. Je kleiner die Wellenlänge, desto höher die Energie. 
+\pagebreak
+\\
+Die dazugehörige Skizze
+\begin{center}
+\includegraphics[width=0.3\textwidth]{roentgen.png} 
+\end{center}
+
+
+\item BRAGGsche Reflexionsbedingung, hierbei gilt
+\begin{equation*}
+\Delta s = k \cdot \lambda = 2 \cdot d \cdot sin(\varphi) \text{ ... BRAGGsche Reflexionsbedingung}
+\end{equation*}
+\begin{equation*}
+\lambda = \lambda_{min} \cdot 2.5 = 0.62 \AA
+\end{equation*}
+\begin{equation*}
+sin(\varphi) = \frac{k \cdot \lambda}{2 \cdot d} \Rightarrow \varphi = sin^{-1}\left(\frac{k \cdot \lambda}{2 \cdot d}\right)
+\end{equation*}
+Die Winkel sind bei den ersten drei Beugungsmaxima zu erkennen bei
+\begin{equation*}
+k=1: \varphi_1 = sin^{-1}\left(\frac{1 \cdot 0.62\AA}{2 \cdot 1\AA}\right) = 0.315 = 18.06^\circ
+\end{equation*}
+\begin{equation*}
+k=2: \varphi_2 = sin^{-1}\left(\frac{2 \cdot 0.62\AA}{2 \cdot 1\AA}\right) = 0.669 = 38.32^\circ
+\end{equation*}
+\begin{equation*}
+k=3: \varphi_3 = sin^{-1}\left(\frac{3 \cdot 0.62\AA}{2 \cdot 1\AA}\right) = 1.194 = 68.43^\circ
+\end{equation*}
+\item
+\begin{align*}
+U_{min} &= \frac{13.6 \cdot 1.602\cdot 10^{-19}J \cdot Z^2}{e} > 50kV \\
+Z^2 &> \frac{50kV \cdot 1.602\cdot 10^{-19}C}{13.6 \cdot 1.602 \cdot 10^{-19}J} \\
+Z &> \sqrt{3676.5} = 60.63 \approx 61
+\end{align*}
+Die Kernladungszahl muss also $\geq 61$ sein, damit keine charakteristische Röntgenstrahlung auftritt. 
+\pagebreak
+\item 
+\begin{align*}
+E_{min} = e \cdot U_{min} = R_x(Z-\sigma)^2 \frac{1}{n^{'2}} \\
+\text{mit } n^{'} \text{ und } \sigma \approx 1 \text{ nun } U_{min} \text{ berechnen: } \\
+U_{min} = \frac{13.6 \cdot e \cdot 73^2}{e} = 72.474kV
+\end{align*}
+Für $U<U_{min}$ tritt somit keine charakteristische Strahlung auf!
+
 \end{enumerate}
 
+\begin{framed}
+Die Rydbergkonstante für das Wasserstoffatom beträgt $109677cm^{-1}$. 
+\begin{enumerate}
+\item Wie groß ist die Wellenlänge der Balmer-Linie$H_\alpha$ (Übergang n = 5 zu n = 2) und der Lyman-Linie $L_\alpha$ (Übergang n=2 zu n=1)?
+\item Wie groß ist die Ionisierungsenergie des Wasserstoffatoms (in eV, Berechnung aus der gegebenen Rydbergkonstante)?
+\end{enumerate}
+\end{framed}
+\begin{enumerate}
+\item Balmer-Linie $H_\alpha$:
+\begin{align*}
+f = R_H\cdot \left(\frac{1}{2^2} - \frac{1}{n^2}\right) &= 10967700m^{-1} \cdot \left(\frac{1}{2^2} - \frac{1}{5^2}\right) = 2303217m^{-1} \\
+\lambda = \frac{1}{f} &= \frac{1}{2303217m1{-1}} = 434,18nm
+\end{align*}
+Lyman-Linie $L_\alpha$:
+\begin{align*}
+f = R_H\cdot \left(\frac{1}{1^2} - \frac{1}{n^2}\right) &= 10967700m^{-1} \cdot \left(\frac{1}{1^2} - \frac{1}{2^2}\right) = 8225775m^{-1} \\
+\lambda = \frac{1}{f} &= \frac{1}{8225775m1{-1}} = 121.57nm
+\end{align*}
+\item \begin{align*}
+E_{ion} \cdot \frac{1}{n^2} &= -h \cdot c \cdot R_H \cdot \frac{1}{n^2} \\
+E_{ion} &= h \cdot c \cdot R_H = 6.62 \cdot 10^{-34}Js \cdot 3 \cdot 10^8m/s \cdot 10967700m^{-1} = 217818522 \cdot 10^{-26}J \\
+1eV &... 1.602 \cdot 10^{-19}J \Rightarrow \frac{217818522 \cdot 10^{-26}J}{1.602 \cdot 10^{-19}J} \cdot 1eV = 13.5967eV
+\end{align*}
+\end{enumerate}
 
+\pagebreak
 
+\begin{framed}
+Ein Körper (m=1kg) kann reibungsfrei auf einer parabelförmigen Bahn gleiten. Sein Mittelpunkt befindet sich 2m über dem Bahnminimum. Die Bahnform ist symmetrisch um den Nullpunkt und gehorcht der Gleichung $h(x) = b \cdot x^2$ mit $b = 2m^{-1}$. 
+\begin{enumerate}
+\item Wie groß ist die Geschwindigkeit auf halber Höhe und auf Höhe Null?
+\item Wie hängt die auf den Körper wirkende Kraftkomponente in Richtung der x-Achse von der Auslenkung x ab (Gleichung für F(x) herleiten)?
+\item Welche Größe bleibt während der gesamten Bewegung erhalten und welche Bewegung wird er ausführen?
+\item Geben Sie die Gleichung für die Beschleunigung $a$ in x-Richtung an!
+\end{enumerate}
+\end{framed}
 
+\begin{enumerate}
+\item Es gilt
+\begin{equation*}
+E = m \cdot g \cdot h = \frac{m \cdot v^2}{2} \Rightarrow v = \sqrt{2 \cdot g \cdot h}
+\end{equation*}
+Auf halber Höhe gilt somit
+\begin{equation*}
+v_{1/2} = \sqrt{2 \cdot 10 \frac{m}{s^2} \cdot 1m} = 4.472 \frac{m}{s}
+\end{equation*}
+Auf Höhe Null gilt dann
+\begin{equation*}
+v_{0} = \sqrt{2 \cdot 10 \frac{m}{s^2} \cdot 2m} = 6.325 \frac{m}{s}
+\end{equation*}
+\item Es gilt
+\begin{equation*}
+W = \int{F \cdot dx} \Rightarrow F_x = \frac{dW}{dx}
+\end{equation*}
+\begin{equation*}
+W = -E_{pot} = -m \cdot V_{pot} = -m\cdot g\cdot h = -m \cdot g \cdot b \cdot x^2
+\end{equation*}
+\begin{equation*}
+F_{(x)} = -\frac{d}{dx}\cdot m \cdot g \cdot b\cdot x^2 = -2mgbx
+\end{equation*}
+\item Die Energie und die Masse bleiben erhalten. Der Körper führt eine oszillierende Bewegung aus auf der Parabelbahn. 
+\item \begin{equation}
+F_{x} = m \cdot a(x) \Rightarrow a(x) = \frac{F(x)}{m} = -2gbx
+\end{equation}
+\end{enumerate}
 
 
 
