@@ -2241,13 +2241,60 @@ Die Hystereseschleife beschreibt den nichtlinearen Verlauf der Magnetisierung vo
 \begin{framed}
 Ein Linsensystem besteht aus einer Zerstreuungslinse ($f=-10cm$) und einer Sammellinse ($f=12cm$) im Abstand von 9 cm. Der Gegenstand wird 8 cm vor der Zerstreuungslinse angeordnet.
 \begin{enumerate}
-\item 
-\item
-\item
+\item In welcher Entfernung von der Sammellinse entsteht das Bild? Wie groß ist der Abbildungsmaßstab?
+\item Wie groß muss die Brennweite einer Ersatzlinse sein, und wo muss sie aufgestellt werden, damit das Bild am selben Ort und mit der selben Größe entsteht?
+\item Eine Sammellinse bildet einen Gegenstand 4-fach vergrößert reell ab, verschiebt man die Linse gegenüber dem Gegenstand um 1cm, so erhält man ein 5-fach vergrößertes, ebenfalls reelles Bild. Wie groß ist die Brennweite der Sammellinse?
 \end{enumerate}
 \end{framed}
 
-
+\begin{enumerate}
+\item \begin{align*}
+f_Z = -10cm, \ f_S = 12cm, \ g_1 = 8cm \\
+\end{align*}
+Die allgemeine Formel lautet nun in im ersten Fall
+\begin{align*}
+\frac{1}{f_Z} = \frac{1}{g_1} + \frac{1}{b_1} \\
+b_1 = \frac{1}{\frac{1}{f_z}-\frac{1}{g_1}} = \frac{1}{\frac{1}{-10}-\frac{1}{8}} &= -4.44 cm \\
+g_2 = 9cm - b_1 &= 13.44cm \\
+b_2 = \frac{1}{\frac{1}{f_s}-\frac{1}{g_2}} = \frac{1}{\frac{1}{12} - \frac{1}{13.44}} &= \underline{111.69cm}
+\end{align*}
+Damit ergibt sich für den Abbildungsmaßstab
+\begin{align*}
+M = \left(-\frac{b_1}{g_1}\right) \cdot \left(-\frac{b_2}{g_2}\right) = \frac{-4.44}{8} \cdot \frac{111.69}{13.44} = -4.615
+\end{align*}
+Es entsteht also ein verkehrtes, vierfach vergrößertes Bild. 
+\item Der gesamte Abstand zwischen Gegenstand und Abbildung ergibt sich aus der gesamten Distanz zwischen Gegenstand - Linse 1 - Linse 2 - Abbildung
+\begin{align*}
+|b| + |g| = 8 + 9 + 111.69 = 128.69cm
+\end{align*}
+Mit dem bisher bekannten Abbildungsmaßstab von $-4,615$ gilt nun
+\begin{align*}
+M = -\frac{b}{g} = -4.615 \Rightarrow -b = -4.615 \cdot g
+\end{align*}
+Damit ergibt sich für die Gegenstandsweite
+\begin{align*}
+M_T = -4.615 &= -\frac{\text{Gesamtdistanz - Gegenstandsweite g}}{g} \\ &=\frac{128.69-g}{g} = -\frac{128.69}{g} + \frac{g}{g} = \frac{128.69}{g} +1 \\  &\Rightarrow 5.615g = 128.69
+\end{align*}
+Damit folgt daraus $g=22.92cm$ und $b=128.69-g=105.77cm$. Damit lässt sich die Brennweite berechnen zu
+\begin{align*}
+f = \frac{1}{\frac{1}{g}+\frac{1}{b}} = \frac{1}{\frac{1}{22.92} + \frac{1}{105.77}} = 18.84 cm
+\end{align*}
+\item Damit man eine größere Vergrößerung erhält, muss man die Linse zum Gegenstand bewegen. Dadurch kann man auf die beiden Abbildungsmaßstäbe schließen
+\begin{align*}
+M_T &=-\frac{b}{g} = -4 \\
+M_T &= -\frac{b+1}{g-1} = -5
+\end{align*}
+Nun kann man die erste Gleichung umgeformt $b = 4g$ in die Zweite einsetzen
+\begin{align*}
+\Rightarrow \frac{4g + 1}{g -1} = 5 &\Rightarrow 4g + 1 = 5g - 5 \\
+g &= 6cm \\
+b &= 24cm
+\end{align*}
+Daraus wiederum lässt sich die Brennweite der Linse berechnen
+\begin{align*}
+\frac{1}{f} = \frac{1}{60} + \frac{1}{240} \Rightarrow f = 4.8cm
+\end{align*}
+\end{enumerate}
 
 
 
