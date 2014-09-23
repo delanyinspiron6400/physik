@@ -2442,6 +2442,162 @@ F_{x} = m \cdot a(x) \Rightarrow a(x) = \frac{F(x)}{m} = -2gbx
 \end{equation}
 \end{enumerate}
 
+\pagebreak
+
+\begin{framed}
+Das Licht der roten Cd-Linie $644nm$ (Übergang im Singulett-System) wird in einem Magnetfeld von $B = 0.7$ Tesla emittiert. Wie groß ist die Frequenzänderung des emittierten Lichts und wie groß muss das Auflösungsvermögen $\nu /\Delta \nu$ eines optischen Instruments sein, damit der Effekt deutlich beobachtet werden kann? (Aufspaltung = 2x auflösbare Frequenzänderung) ($\mu_B = 9.27 \cdot 10^{-24}J/T$)
+\end{framed}
+
+\begin{align*}
+\Delta E = \mu_B \cdot B = 9.27 \cdot 10^{-24} \cdot 0.7 = 6.49 \cdot 10^{-24} J \\
+\Delta E = h \cdot \Delta \nu \Rightarrow \Delta \nu = 9.8 \cdot 10^9 Hz \\
+\end{align*}
+Das Gerät muss daher mit mindestens $\Delta \nu /2 = 4.9 \cdot 10^9 Hz$ auflösen. Zur Bestimmung des Auflösungsvermögen muss jetzt noch die Frequenz selbst bestimmt werden
+\begin{align*}
+\nu = \frac{c}{\lambda} = \frac{c}{0.000000644m} = 4.66 \cdot 10^{14}Hz
+\end{align*}
+Daraus ergibt sich nun ein Auflösungsvermögen von $\frac{\nu}{\Delta \nu} = 95102$. 
+
+\begin{framed}
+Ein gut kollimierter Elektronenstrahl trifft auf einen Kristall mit dem Netzebenenabstand $d = 0.9 \mathrm{\AA}$. Bei $\varphi = 25^\circ$ beobachtet man ein Interferenzmaximum 1.Ordnung (BRAGGsche Reflexion). 
+\begin{enumerate}
+\item Wie groß ist die DE BROGLIE-Wellenlänge der Elektronen und mit welcher Spannung wurden die Elektronen beschleunigt?
+\item Derselbe Kristall zeigt für monochromatisches Röntgenlicht unter demselben Winkel ein Reflexionsmaximum. Wie groß muss die Spannung an der Röntgenröhre sein, wenn man annimmt, dass 20\% der Elektronenenergie in Strahlungsenergie umgewandelt wird?
+\end{enumerate} 
+\end{framed}
+
+\begin{enumerate}
+\item \begin{align*}
+\Delta s = k \cdot \lambda &= 2 \cdot d \cdot sin \ \varphi = \frac{h}{m \cdot v} \\
+\lambda = 0.76707\cdot 10^{-10}m \Rightarrow v &= \frac{h}{m \cdot \lambda} = \frac{6.62 \cdot 10^{-34}}{9.109 \cdot 10^{-31} \cdot 0.76707 \cdot 10^{-10}} = 9.5 \cdot 10^6 \\
+U \cdot e = \frac{m \cdot v^2}{2} &\Rightarrow U = \frac{m \cdot v^2}{2 \cdot e} = 259.5 V
+\end{align*}
+\item \begin{align*}
+E = h \cdot \nu = \frac{h \cdot c}{\lambda} = 1.986 \cdot 10^{-15} J \\
+n = 20\% \Rightarrow E_e = \frac{E}{n} = 9.923 \cdot 10^{-15}J \\
+E_e = e \cdot U \Rightarrow U = \frac{E_e}{e} = 61.94 kV
+\end{align*}
+\end{enumerate}
+
+\pagebreak
+
+\begin{framed}
+Sie führen einen schiefen Wurf durch, der Körper startet mit Geschwindigkeit $v_0$ in waagrechter Richtung und $v_{\bot}$ in vertikaler Richtung nach oben. Geben sie folgende Gleichungen an: $x(t),y(t),y(x)$. Welche geometrische Form hat die Bahnkurve?
+\end{framed}
+Der schiefe Wurf setzt sich zusammen aus freiem Fall (beschleunigte Bewegung) in senkrechter Richtung und gleichförmiger Bewegung in waagrechter Richtung. 
+\begin{align*}
+x(t) &= v_0 \cdot t \Rightarrow t = \frac{x(t)}{v_0} \\
+y(t) &= v_\bot \cdot t - \frac{1}{2}\cdot g \cdot t^2 \\
+y(x) &= v_\bot \cdot \frac{x}{v_0} - \frac{1}{2} \cdot g \cdot \left(\frac{x}{v_0}\right)^2
+\end{align*}
+Die Wurfbahn folgt einer Parabel. 
+
+
+\begin{framed}
+Die erste künstliche Kernumwandlung wurde mit der Reaktion
+\begin{align*}
+_7N^{14} + _2He^4 \ \Rightarrow \ _8O^{17} + 1_H^1
+\end{align*}
+nachgewiesen, die relativen Atommassen sind dabei: \\$_7N^{14}:14.0031; _2He^4:4.0026; _8O^{17}:16.9993; 1_H^1:1.0078$. 
+\begin{enumerate}
+\item Welche Mindestenergie (in MeV) muss das $\alpha$-Teilchen am Kernort noch besitzen, um die Reaktion auszulösen?
+\item Welche Gesamtenergie muss das $\alpha$-Teilchen (im Abstand unendlich) besitzen, um die Reaktion auszulösen (Die Annäherung an den N-Kern soll bis auf $3 \cdot 10^{-13}cm$ notwendig sein)?
+\end{enumerate}
+\end{framed}
+
+\begin{enumerate}
+\item \begin{gather*}
+E \geq \Delta m \cdot c^2 \\
+\Delta m = m_{Aus} - m_{Ein} = (16.9993+1.0078)-(14.0031+4.0026) = 0.0014u \\
+1u = 1.66 \cdot 10^{-27}kg \Rightarrow \Delta m = 0.0014 \cdot 1.66 \cdot 10^{-27}kg = 2.32477 \cdot 10^{-300}kg \\
+E_{min} = \Delta m \cdot c^2 = 208.871 \cdot 10^{-15}J = 1.303 MeV
+\end{gather*}
+\item \begin{gather*}
+E_{Ges} = \frac{1}{4 \pi \epsilon_0}\cdot \frac{Z_{Projektil} \cdot Z_{Kern}\cdot e^2}{r} = \frac{1}{4 \pi \epsilon}\frac{1\cdot 40 \cdot e^2}{3\cdot 10^{-15}} = 3.077 \cdot 10^{-12}J = 19.2 MeV
+\end{gather*}
+\end{enumerate}
+
+\pagebreak
+
+\begin{framed}
+Ein Atomkern mit relativer Masse $237.9456$ emittiert ein $\alpha$-Teilchen (relative Masse $4.0026$) der Energie $5MeV$ und der entstandene angeregte Zwischen-Kern anschließend ein $\gamma$-Quant der Energie $1.2MeV$. Wie groß ist die relative Masse des stabilen Endkerns?
+\end{framed}
+
+\begin{gather*}
+1.2 \cdot 10^6 eV \cdot 1.602 \cdot 10^{-19} = 1.9224 \cdot 10^{-13}J \\
+\Delta E = \Delta m \cdot c^2 \Rightarrow \Delta m = \frac{\Delta E}{c^2} = \frac{1.9224 \cdot 10^{-13}J}{(3 \cdot 10^8 \frac{m}{s})^2} = 2.136 \cdot 10^{-30}kg \\
+\frac{2.136 \cdot 10^{-30}kg}{1.66055 \cdot 10^{-27}kg} = 0.001287u \\
+\Delta m = 237.9456 - 4.0026 - 0.001287 = 233.942u
+\end{gather*}
+
+
+\begin{framed}
+Die Elektronen eines Elektronenstrahls werden zunächst mit Hilfe einer Spannung von 200V auf konstante Geschwindigkeit gebracht. Danach durchläuft der Strahlt ein senkrecht zu seiner Richtung angeordnetes, homogenes elektrisches Feld (Abstand der Kondensatorplatten 1cm, Länge 5cm, Kondensatorspannung 10V).
+\begin{enumerate}
+\item Wie groß ist die Ablenkkraft auf die Elektronen im Kondensator?
+\item Welche Geschwindigkeit senkrecht zur ursprünglichen Strahlrichtung besitzen die Elektronen des Strahls nach dem Kondensator?
+\item Unter welchem Winkel zur ursprünglichen Richtung verlässt der Strahl den Kondensator?
+\end{enumerate}
+\end{framed}
+
+\begin{enumerate}
+\item \begin{gather*}
+F = e \cdot E \\
+E = \frac{U}{d} = \frac{10}{0.01} = 1000 \frac{V}{m} \\
+F = 1.602 \cdot 10^{-19}\cdot 1000 = 1.602 \cdot 10^{-16}N
+\end{gather*}
+\item \begin{gather*}
+E_{kin} = e \cdot U_0  = \frac{m \cdot v^2}{2} \Rightarrow v_0 = \sqrt{\frac{2 \cdot e \cdot U_0}{m}} = \sqrt{\frac{2 \cdot 1.602 \cdot 10^{-19}\cdot 200}{9.109 \cdot 10^{-31}}} = 8.387 \cdot 10^6 \frac{m}{s} \\
+t = \frac{l}{v_0} = \frac{0.05}{8.387 \cdot 10^{-31}} = 5.961 \cdot 10^{-9}s \\
+a_{senkrecht} = \frac{F}{m} = \frac{1.602 \cdot 10^{-16}}{9.1 \cdot 10^{-31}} = 1.759 \cdot 10^{14} \frac{m}{s^2} \\
+v_{senkrecht} = a_{senkrecht} \cdot t = 1.759 \cdot 10^{14} \cdot 5.961 \cdot 10^{-9} = 1.049 \cdot 10^6 \frac{m}{s}
+\end{gather*}
+\pagebreak
+\item 1. Möglichkeit: 
+\begin{gather*}
+\Delta Z = \frac{a \cdot t^2}{2} = \frac{1.759 \cdot 10^{14} \cdot 5.961 \cdot 10^{14}}{2} = 0.003126m \\
+\alpha = arctan \frac{\Delta Z}{\frac{l}{2}} = arctan \frac{0.3126}{2.5}= 7.13^\circ = 0.124 rad
+\end{gather*}
+2. Möglichkeit:
+\begin{gather*}
+\alpha = arctan\frac{v_{senkrecht}}{v_0} = arctan\frac{1.049 \cdot 10^6 \frac{m}{s}}{8.387 \cdot 10^{6}\frac{m}{s}} = 7.13^\circ = 0.124 rad
+\end{gather*}
+\end{enumerate}
+
+
+\begin{framed}
+Ein He-Ne-Laser emittiert bei $633nm$ eine Lichtleistung von $2mW$.
+\begin{enumerate}
+\item Wie hoch sind der Photonenfluss (Photonen/s) und die Energiedichte (Strahlquerschnitt $2mm^2$; $h = 6.62 \cdot 10^{-34}Js$) beim Strahlaustritt? 
+\item Wie hoch ist die Intensität auf der Netzhaut, wenn der Strahl ins Auge ($f=17mm$, Pupillenradius $R=1.7nm$) fällt (beleuchtete Fläche = Durchmesser des zentralen Beugungsscheibchens)?
+\item Wie groß ist die Intensität auf der Netzhaut, wenn man direkt in die Sonne blickt (Solarkonstante $1.4kW/m^2$, Winkel, unter dem der Radius der Sonnenscheibe erscheint: $4.6mrad$)? Man vergleiche die beiden Intensitäten!
+\end{enumerate}
+\end{framed}
+
+\begin{enumerate}
+\item \begin{gather*}
+\lambda = 633nm, P = 2mW, A = 2mm^2 \\
+\nu = \frac{c}{\lambda} = \frac{3 \cdot 10^8\frac{m}{s}}{633 \cdot 10^{-9}m} = 4.74\cdot 10^{14}Hz \\
+P = n \cdot h \cdot \nu \Rightarrow n = \frac{P}{h \cdot \nu} = \frac{2 \cdot 10^{-3}W}{6.62 \cdot 10^{-34} Js \cdot 4.74 \cdot 10^{14}\frac{1}{s}} = 6.37 \cdot 10^{15} \frac{Photonen}{s} \\
+u = \frac{P \cdot t}{A \cdot c \cdot t} = \frac{2 \cdot 10^{-3}W}{2 \cdot 10^{-6}m^2 \cdot 3 \cdot 10^8 \frac{m}{s}} = 3 \cdot 10^{-6} \frac{J}{m^3}
+\end{gather*}
+\item \begin{gather*}
+d = 1.33 \frac{\lambda}{R} \cdot \nu = 1.22 \cdot \frac{633 \cdot 10^{-9}m}{1.7 \cdot 10^{-3}}\cdot 17 \cdot 10^{-3} = 7.723 \cdot 10^{-6}m \\
+A = \frac{d^2 \cdot \pi}{4} = \frac{(7.723 \cdot 10^{-6}m)^2}{4} = 4.68 \cdot 10^{-11} m^2 \\
+I = \frac{P}{A} = \frac{2 \cdot 10^{-3}W}{4.68 \cdot 10^{-11}m^2} = 4.27 \cdot 10^7 \frac{W}{m^2}
+\end{gather*}
+\pagebreak
+\item \begin{gather*}
+R_{Sonne} = \nu \cdot tan(\varphi) = 17 \cdot 10^{-3}m \cdot tan(4.6 \cdot 10^{-3}) = 7.82 \cdot 10^{-5}m \\
+A_{sonne} = R_{Sonne}^2\cdot \pi = (7.82 \cdot 10^{-5})^2 \cdot \pi = 1.92 \cdot 10^{-8}m^2 \\
+P_{Sonne} = S \cdot A_{Pupille} = 1.4 \cdot 10^3 \frac{W}{m^2} \cdot 9.079 \cdot 10^{-6}m^2 = 1.27 \cdot 10^{-2}W \\
+I = \frac{P_{Sonne}}{A_{Sonne}} = \frac{1.27 \cdot 10^{-2}W}{1.92 \cdot 10^{-8}m^2} = 661616.4 \frac{W}{m^2}
+\end{gather*}
+Die Intensität des Lasers ist zirka das 65-fache der Sonne. 
+\end{enumerate}
+
+
+
 
 
 
